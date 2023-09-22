@@ -1,8 +1,10 @@
-import styles from "./Main.module.css";
+import styles from './Main.module.css';
+import About from '../../About/About';
 
 const Main = () => {
   return (
     <div className={styles.main}>
+      {/* <<<<<<< HEAD
       <section className={styles.wings}>
         <h3>На Крила</h3>
         <div className={styles.wingsRov}>
@@ -23,6 +25,9 @@ const Main = () => {
         </div>
         <div className={styles.wingsInfo}>Жодний з <span className={styles.spanText}>БпЛА “Бекфаєр”</span> за рік роботи не був втрачений у бойових діях. Невидимі і недосяжні для ворога.</div>
       </section>
+======= */}
+      <About />
+      {/* >>>>>>> 492a8366a259d7f48d540153adb2fcac4a674dc3 */}
     </div>
   );
 };
