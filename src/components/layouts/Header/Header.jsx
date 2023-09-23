@@ -1,9 +1,9 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import { useState } from "react";
 import { useRef } from "react";
 
 import Logo from "../../../images/logo.png";
 import styles from "./Header.module.css";
-
 
 const navLinks = [
   { text: "Про бригаду", sectionId: "1" }, // change numbers to element id
@@ -18,10 +18,10 @@ const Header = ({ links = navLinks }) => {
   const handleButtonClick = (sectionId) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      scrollRef.current = element.offsetTop - 80; 
+      scrollRef.current = element.offsetTop - 80;
       window.scrollTo(0, scrollRef.current);
     }
-    setActive(false)
+    setActive(false);
   };
 
   return (
@@ -30,7 +30,13 @@ const Header = ({ links = navLinks }) => {
         <div className={styles.logo_wrapper}>
           <img className={styles.logo_img} src={Logo} alt="logo" />
         </div>
-        <nav className={active ? `${styles.nav_wrapper} ${styles.active}` : styles.nav_wrapper}>
+        <nav
+          className={
+            active
+              ? `${styles.nav_wrapper} ${styles.active}`
+              : styles.nav_wrapper
+          }
+        >
           <ul className={styles.nav_list}>
             {links.map((link) => (
               <li className={styles.nav_item} key={link.sectionId}>
@@ -44,19 +50,20 @@ const Header = ({ links = navLinks }) => {
             ))}
           </ul>
         </nav>
-        <a 
-          className={styles.button_donat}
-          href="#"
-        >
+        <a className={styles.button_donat} href="#">
           На Крила
         </a>
         <div
-            className={styles.burger_menu_icon}
-            onClick={() => setActive(!active)}
+          className={styles.burger_menu_icon}
+          onClick={() => setActive(!active)}
         />
       </div>
       <div
-        className={active ? `${styles.burger_menu_blur} ${styles.active}` : styles.burger_menu_blur}
+        className={
+          active
+            ? `${styles.burger_menu_blur} ${styles.active}`
+            : styles.burger_menu_blur
+        }
       ></div>
     </header>
   );
