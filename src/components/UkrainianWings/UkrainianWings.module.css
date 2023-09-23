@@ -1,0 +1,99 @@
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.ukrainian-wings {
+  padding: 60px 0;
+  background-color: var(--black);
+  padding: 60px 0 60px;
+}
+
+.ukrainian-wings-wrapper {
+  margin: 0 auto;
+  max-width: 1480px;
+  background-image: url('../../assets/img/ukrainian-wings/bg-ukrainian-wings.png');
+  background-repeat: no-repeat;
+}
+
+.ukrainian-wings-container {
+  display: flex;
+}
+
+.ukrainian-wings-block {
+  display: flex;
+  width: 50%;
+}
+
+.ukrainian-wings-left-block {
+  padding: 104px 10px 170px 0;
+  flex-direction: column;
+}
+
+.ukrainian-wings-right-block {
+  padding-top: 60px;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.ukrainian-wings-title {
+  font-family: var(--bold-font-family);
+  font-size: var(--h1-font-size);
+  line-height: var(--h1-line-height);
+  font-weight: 400;
+  color: var(--main-green);
+  text-align: left;
+}
+
+.ukrainian-wings-subtitle {
+  font-family: var(--thin-font-family);
+  font-size: var(--h5-font-size);
+  line-height: var(--h5-line-height);
+  font-weight: 400;
+  color: var(--white);
+  text-transform: uppercase;
+  margin: 20px 0;
+  text-align: left;
+}
+
+.ukrainian-wings-desc {
+  font-family: var(--thin-font-family);
+  font-size: var(--body-1-font-size);
+  line-height: var(--body-1-line-height);
+  font-weight: 400;
+  color: var(--white);
+  margin-bottom: 45px;
+  text-align: left;
+}
+
+.ukrainian-wings-desc span {
+  font-family: var(--bold-font-family);
+  font-size: var(--body-1-font-size);
+  line-height: var(--body-1-line-height);
+  font-weight: 400;
+  color: var(--main-green);
+}
+
+.ukrainian-wings-btn {
+  font-family: var(--bold-font-family);
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 43px;
+  color: var(--black);
+  text-decoration: none;
+  background-color: var(--main-green);
+  padding: 28px 118px;
+  width: 407px;
+}
+
+.ukrainian-wings-btn:hover {
+  background-color: var(--button-dark-hover);
+}
+
+.ukrainian-wings-btn:active {
+  background-color: var(--button-dark-pressing);
+  color: var(--main-green);
+}
