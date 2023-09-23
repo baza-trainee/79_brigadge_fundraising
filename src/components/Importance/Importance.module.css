@@ -1,0 +1,77 @@
+.importance {
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
+.importance__title {
+  color: var(--white);
+  font-size: var(--h2-font-size);
+  font-weight: 400;
+  line-height: var(--h2-line-height);
+  font-family: var(--bold-font-family);
+  margin-bottom: 100px;
+}
+
+.importance__list {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 69px;
+}
+
+.importance__item {
+  width: 297px;
+  scale: 1;
+  transition: scale 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.importance__item:hover,
+.importance__item:focus {
+  scale: 1.15;
+}
+
+.importance__img {
+  position: relative;
+}
+.importance__img::after {
+  content: "";
+  background-image: url("../../assets/img/importance/border-desktop.png");
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.importance__info {
+  padding-top: 40px;
+}
+
+.importance__info_text {
+  margin-left: auto;
+  margin-right: auto;
+  width: 230px;
+  text-align: center;
+  color: var(--white);
+  font-family: var(--thin-font-family);
+  font-weight: 400px;
+  font-size: 24px;
+  line-height: 1.3;
+}
+
+.bigText {
+  width: 250px;
+}
+
+.importance__text {
+  color: var(--white);
+  font-family: var(--bold-font-family);
+  font-size: 40px;
+  font-weight: 400;
+  width: 845px;
+  text-align: left;
+}
+
+.text_color {
+  color: var(--main-green);
+}
