@@ -1,0 +1,47 @@
+.container {
+    position: fixed;
+    z-index: 90;
+    bottom: 90px;
+    right: 120px;
+    width: 88px;
+    height: 110px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in;
+    cursor: pointer;
+}
+
+.icon {
+    object-fit: fill;
+}
+
+.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.animate {
+    animation: scrollButtonAnimation 1s linear 0.1s;
+}
+
+@keyframes scrollButtonAnimation {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    25% {
+        transform: translateY(+5vh);
+        opacity: 1;
+    }
+
+    50% {
+        transform: translateY(-100vh);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-120vh);
+        opacity: 0;
+    }
+}
