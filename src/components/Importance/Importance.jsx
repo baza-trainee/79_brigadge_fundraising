@@ -11,7 +11,7 @@ import img4x2 from "../../assets/img/importance/importance4-desktop@2x.jpg";
 
 const Importance = () => {
   return (
-    <section className={styles.importance}>
+    <section className={styles.importance} id="2">
       <Container>
         <h2 className={styles.importance__title}>Чому важливий збір</h2>
         <ul className={styles.importance__list}>

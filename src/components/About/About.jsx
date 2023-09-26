@@ -1,17 +1,17 @@
-import React from 'react';
-import Container from '../layouts/Container/Container';
-import styles from './About.module.css';
-import logo from '../../assets/img/about/Logo_brygada.svg';
-import backgroundImage from '../../assets/img/about/Fon1.svg';
+import React from "react";
+import Container from "../layouts/Container/Container";
+import styles from "./About.module.css";
+import logo from "../../assets/img/about/Logo_brygada.svg";
+import backgroundImage from "../../assets/img/about/Fon1.svg";
 
 const About = () => {
   return (
-    <section className={styles['about']}>
+    <section className={styles["about"]} id="1">
       <Container>
-        <div className={styles['about-wrapper']}>
-          <h2 className={styles['about-title']}>Про бригаду та проєкт</h2>
-          <div className={styles['about-content-wrapper']}>
-            <p className={styles['about-text']}>
+        <div className={styles["about-wrapper"]}>
+          <h2 className={styles["about-title"]}>Про бригаду та проєкт</h2>
+          <div className={styles["about-content-wrapper"]}>
+            <p className={styles["about-text"]}>
               79-та окрема десантно-штурмова бригада, військовий підрозділ
               Українських Збройних Сил, знаходиться у місті Миколаїв і має
               вражаючий досвід бойових дій, у тому числі в районах, де
@@ -30,7 +30,7 @@ const About = () => {
               та оборони України.
             </p>
             <img
-              className={styles['about-image']}
+              className={styles["about-image"]}
               src={logo}
               alt="brigade-logo"
             />
@@ -38,7 +38,7 @@ const About = () => {
         </div>
       </Container>
       <img
-        className={styles['background-image']}
+        className={styles["background-image"]}
         src={backgroundImage}
         alt=""
       />
