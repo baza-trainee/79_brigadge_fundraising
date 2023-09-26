@@ -1,0 +1,105 @@
+.modal {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: scale(0);
+}
+
+.modal.active {
+    transform: scale(1)
+}
+
+.modal-content {
+    position: relative;
+    margin: 150px auto;
+    height: 660px;
+    width: 800px;
+    background-color: var(--black);
+    border: 1px solid rgba(0, 0, 0, 0);
+    z-index: 1;
+}
+
+.modal-title {
+    color: var(--white);
+    font-family: var(--bold-font-family);
+    font-size: 36px;
+    line-height: 43.2px;
+    font-weight: 400;
+    margin-top: 80px;
+    margin-bottom: 70px;
+}
+
+.modal-btn-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.modal-btn {
+    color: var(--white);
+    font-family: var(--bold-font-family);
+    font-size: 36px;
+    line-height: 43.2px;
+    font-weight: 400;
+    width: 400px;
+    height: 80px;
+    outline: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 32px;
+}
+
+.modal-btn.facebook {
+    background-color: #337FFF;
+}
+
+.modal-btn.telegram {
+    background-color: #34AADF;
+}
+
+.modal-btn.viber {
+    background-color: #754A91;
+}
+
+.modal-btn.linkedin {
+    background-color: #006699;
+}
+
+.icon {
+    width: 60px;
+    height: 60px;
+    margin-left: 60px;
+}
+
+.modal-btn-close {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    background-image: url('../../assets/img/modal/x-square.svg');
+    background-color: transparent;
+    width: 40px;
+    height: 40px;
+    outline: none;
+    border: none;
+}
+
+.fon-2 {
+    position: absolute;
+    left: 1px;
+    top: 1px;
+    pointer-events: none;
+    z-index: -5;
+}
+
+.fon-3 {
+    position: absolute;
+    right: 1px;
+    bottom: 1px;
+    pointer-events: none;
+}
