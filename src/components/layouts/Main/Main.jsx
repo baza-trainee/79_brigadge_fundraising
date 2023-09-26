@@ -1,8 +1,10 @@
 import styles from "./Main.module.css";
 import About from "../../About/About";
 import Backfire from "../../Backfire/Backfire";
+import Strength from '../../Strength/Strength';
 import Wings from "../../Wings/Wings";
 import Importance from "../../Importance/Importance";
+
 
 const Main = () => {
   return (
@@ -10,6 +12,7 @@ const Main = () => {
       <About />
       <Importance />
       <Backfire />
+      <Strength />
       <Wings />
     </div>
   );
