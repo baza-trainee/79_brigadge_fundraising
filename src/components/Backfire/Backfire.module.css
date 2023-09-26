@@ -1,0 +1,161 @@
+.backfire {
+  position: relative;
+  background-color: var(--black);
+  z-index: 4;
+}
+
+.backfire-background-image {
+  position: absolute;
+  top: 38%;
+  right: 0;
+  z-index: 1;
+}
+
+.backfire-title {
+  padding-top: 150px;
+  padding-bottom: 100px;
+}
+
+.backfire-title,
+.backfire-content-benefits-banner-title {
+  color: var(--white);
+  font-family: var(--bold-font-family);
+  font-size: var(--h2-font-size);
+  line-height: var(--h2-line-height);
+  font-weight: 400;
+}
+
+.backfire-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  z-index: 6;
+}
+
+.backfire-content-examples {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-basis: 57%;
+  width: 100%;
+}
+
+.backfire-content-example {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.backfire-content-example-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 2.5rem;
+  width: auto;
+  height: auto;
+}
+
+.backfire-content-example-image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../assets/img/backfire/frame.png");
+  background-repeat: no-repeat;
+  width: 11.75rem;
+  height: 11.75rem;
+}
+
+.backfire-content-example-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+}
+
+.backfire-content-example-image-title {
+  color: var(--white);
+  font-family: var(--thin-font-family);
+  font-size: var(--body-2-font-size);
+  text-align: left;
+  max-width: 150px;
+  margin-left: 30px;
+  font-weight: 400;
+}
+
+.backfire-content-benefits {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 153px;
+  z-index: 3;
+}
+
+.backfire-content-benefits-banner {
+  display: flex;
+  align-items: baseline;
+  height: fit-content;
+  background-color: var(--main-green);
+  padding: 2.25rem 2.438rem;
+}
+
+.backfire-content-benefits-banner-title {
+  text-align: left;
+  display: inline-flex;
+}
+
+.backfire-content-benefits-list {
+  display: flex;
+  flex-direction: column;
+  gap: 81.6px;
+  align-items: flex-start;
+  margin-top: 40px;
+}
+
+.backfire-content-benefits-list-item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 30px;
+}
+
+.backfire-content-benefits-list-item-icon {
+  position: relative;
+  background-image: url("../../assets/img/backfire/sight-frame.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 80px;
+  min-width: 80px;
+}
+
+.backfire-content-benefits-list-item-count {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  color: var(--main-green);
+  font-family: var(--thin-font-family);
+  font-size: var(--body-1-font-size);
+  line-height: var(--body-2-line-height);
+  font-weight: 400;
+}
+
+.backfire-content-benefits-list-item-title,
+.backfire-content-benefits-list-item-text {
+  color: var(--white);
+  font-family: var(--thin-font-family);
+  font-weight: 400;
+  text-align: left;
+}
+
+.backfire-content-benefits-list-item-title {
+  font-size: var(--h5-font-size);
+  text-transform: uppercase;
+}
+
+.backfire-content-benefits-list-item-text {
+  font-size: var(--body-2-font-size);
+  margin-top: 7px;
+}
