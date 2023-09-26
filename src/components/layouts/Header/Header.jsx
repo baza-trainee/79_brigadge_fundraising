@@ -28,7 +28,9 @@ const Header = ({ links = navLinks }) => {
     <header className={styles.header_container}>
       <div className={styles.header_wrapper}>
         <div className={styles.logo_wrapper}>
-          <img className={styles.logo_img} src={Logo} alt="logo" />
+          <a href="#">
+            <img className={styles.logo_img} src={Logo} alt="logo" />
+          </a>
         </div>
         <nav
           className={

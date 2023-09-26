@@ -76,7 +76,7 @@ const Backfire = () => {
     },
   ];
   return (
-    <section className={styles["backfire"]}>
+    <section className={styles["backfire"]} id="3">
       <Container>
         <div>
           <h1 className={styles["backfire-title"]}>Бекфаєр К1 Комплекс</h1>
