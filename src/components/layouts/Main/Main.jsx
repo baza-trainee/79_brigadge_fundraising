@@ -1,4 +1,5 @@
 import styles from "./Main.module.css";
+
 import About from "../../About/About";
 import Backfire from "../../Backfire/Backfire";
 import Strength from '../../Strength/Strength';
