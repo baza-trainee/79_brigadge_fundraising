@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Donation, Jars, RecentDonations
+from .models import Donation, Jar, RecentDonation
 
 
 class DonationAdmin(admin.ModelAdmin):
@@ -15,5 +15,5 @@ class RecentDonationsAdmin(admin.ModelAdmin):
 
 
 admin.site.register(Donation, DonationAdmin)
-admin.site.register(Jars, JarsAdmin)
-admin.site.register(RecentDonations, RecentDonationsAdmin)
+admin.site.register(Jar, JarsAdmin)
+admin.site.register(RecentDonation, RecentDonationsAdmin)

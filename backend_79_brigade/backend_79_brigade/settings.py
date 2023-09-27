@@ -11,6 +11,21 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
 from pathlib import Path
+from dotenv import load_dotenv
+import logging
+import os
+
+
+logging.basicConfig(format='%(levelname)s:%(message)s', level=logging.WARNING)
+load_dotenv()
+
+try:
+    JAR = os.environ['JAR']
+    MONOBANK_API_KEY = os.environ['MONOBANK_API_KEY']
+    JAR_CREATION_DATE = int(os.environ['JAR_CREATION_DATE'])
+except KeyError as err:
+    logging.critical(f"Can't read token from environment variable. Message: {err}")
+    raise KeyError(err)
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent

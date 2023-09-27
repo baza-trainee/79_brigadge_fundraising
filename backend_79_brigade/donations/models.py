@@ -1,7 +1,7 @@
 from django.db import models
 
 
-class Jars(models.Model):
+class Jar(models.Model):
     jar_id = models.CharField(primary_key=True, max_length=100)
     target_amount = models.IntegerField(default=0)
     current_amount = models.IntegerField(default=0)
@@ -16,7 +16,8 @@ class Donation(models.Model):
     id = models.CharField(primary_key=True, max_length=50)
     donor = models.CharField(max_length=100)
     donationAmount = models.DecimalField(max_digits=10, decimal_places=2)
-    jar = models.ForeignKey(Jars, on_delete=models.CASCADE, null=True)
+    jar = models.ForeignKey(Jar, on_delete=models.CASCADE, null=True)
+    time = models.DateTimeField(null=True)
 
     objects = models.Manager()
 
@@ -24,10 +25,11 @@ class Donation(models.Model):
         return f'{self.donor} - {self.donationAmount} грн.'
 
 
-class RecentDonations(models.Model):
+class RecentDonation(models.Model):
     donor = models.CharField(max_length=100)
     donationAmount = models.DecimalField(max_digits=10, decimal_places=2)
-    jar = models.ForeignKey(Jars, on_delete=models.CASCADE, null=True)
+    jar = models.ForeignKey(Jar, on_delete=models.CASCADE, null=True)
+    time = models.DateTimeField(null=True)
 
     objects = models.Manager()
 
