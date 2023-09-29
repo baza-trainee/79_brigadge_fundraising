@@ -1,0 +1,113 @@
+.progressBar_section {
+  background-color: var(--main-green);
+  padding: 80px 0px;
+}
+
+.progressBar__title {
+  color: var(--black);
+  font-family: var(--bold-font-family);
+  font-size: var(--h2-font-size);
+  line-height: var(--h2-line-height);
+  font-weight: 400;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+.progressBar__img_wrapper {
+  position: relative;
+  width: 297px;
+}
+.progressBar__img_wrapper::after {
+  content: "";
+  background-image: url("../../assets/img/progress-bar/explosion.gif");
+  position: absolute;
+  top: -111px;
+  left: 53px;
+  width: 70%;
+  height: 200%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.progressBar__btn_list {
+  display: flex;
+  gap: 60px;
+  margin-top: 50px;
+}
+
+.progressBar__content_wraper {
+  display: flex;
+  gap: 37px;
+  margin-bottom: 99px;
+  margin-top: 5px;
+  padding-top: 125px;
+  justify-content: center;
+  align-items: flex-end;
+}
+.progressBar__scale_wrapper {
+  width: 970px;
+  height: 80px;
+  border: 3px solid var(--black);
+  padding: 10px;
+  position: relative;
+}
+
+.progressBar__scale_amount_number,
+.progressBar__scale_amount_percent,
+.progressBar__scale_current_number,
+.progressBar__scale_current_percent {
+  color: var(--white);
+  font-size: 24px;
+  font-family: var(--bold-font-family);
+  font-weight: 400px;
+  line-height: 1.2;
+  position: absolute;
+}
+
+.progressBar__scale_amount_number {
+  bottom: -44px;
+  right: 0;
+}
+.progressBar__scale_amount_percent {
+  top: -44px;
+  right: 0;
+}
+
+.progressBar__scale_current_number {
+  bottom: -44px;
+  /* left: 26.7%; */
+}
+.progressBar__scale_current_percent {
+  top: -44px;
+  left: 26.7%;
+}
+
+.progressBar__scale {
+  gap: 10px;
+  display: flex;
+  width: 100%;
+  height: 60px;
+  position: relative;
+}
+
+.progress_segment {
+  background-color: var(--grey);
+  flex-grow: 1;
+  height: 100%;
+  transition: background-color 0.3s;
+}
+
+.progress_segment.completed {
+  background-color: var(--black);
+}
+
+.progressBar__scale_plane {
+  content: "";
+  position: absolute;
+  height: 90px;
+  width: 90px;
+  background-image: url(../../assets/img/progress-bar/plane.svg);
+  top: -130px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
