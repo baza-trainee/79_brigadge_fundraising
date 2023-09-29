@@ -24,11 +24,23 @@ const Header = ({ links = navLinks }) => {
     setActive(false);
   };
 
+  const handleLogoClick = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <header className={styles.header_container}>
       <div className={styles.header_wrapper}>
         <div className={styles.logo_wrapper}>
-          <img className={styles.logo_img} src={Logo} alt="logo" />
+          <img
+            className={styles.logo_img}
+            src={Logo}
+            alt="logo"
+            onClick={handleLogoClick}
+          />
         </div>
         <nav
           className={
