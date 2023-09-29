@@ -1,0 +1,21 @@
+.button {
+  background-color: var(--white);
+  border: none;
+  color: var(--main-green);
+  padding: 10px 40px;
+  font-family: var(--bold-font-family);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.2;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button:hover,
+.button:focus {
+  background-color: var(--grey);
+  color: var(--black);
+}
+.button:active {
+  background-color: var(--main-green);
+  color: var(--black);
+}
