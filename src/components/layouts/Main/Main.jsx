@@ -16,8 +16,8 @@ const Main = () => {
       <About />
       <Importance />
       <Backfire />
-      <Strength />
       <Wings />
+      <Strength />
     </div>
   );
 };

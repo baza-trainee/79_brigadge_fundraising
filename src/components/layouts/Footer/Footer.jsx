@@ -13,7 +13,6 @@ const Footer = () => {
       <Container className={styles['footer-container']}>
         <div className={styles['footer-social-icons']}>
           <a href="/#"><img src={SiteIcon} alt='Site' /></a>
-          <a href="/#"><img src={FacebookIcon} alt='Facebook' /></a>
           <a href="/#"><img src={LinkedinIcon} alt='Linkedin' /></a>
           <a href="/#"><img src={TelegramIcon} alt='Telegram' /></a>
         </div>

@@ -17,19 +17,16 @@ const Wings = () => {
               </p>
             </div>
             <div className={styles["wings-block2"]}>
-              <div className={styles["wings-block2-img"]}>
-                <div className={styles["wings-block2-content"]}>
-                  <img src={cotton} alt="cotton" />
-                  <button className={styles["wings-block2-button"]}>
-                    <a href="#">Донат на крила</a>
-                  </button>
-                </div>
+              <div className={styles["wings-block2-content"]}>
+                <img src={cotton} alt="cotton" />
+                <button className={styles["wings-block2-button"]}>
+                  <a href="#">Донат на крила</a>
+                </button>
               </div>
             </div>
           </div>
           <p className={styles["wings-text"]}>
-            Жодний з <span className={styles["span-text"]}>БпЛА “Бекфаєр”</span>{" "}
-            за рік роботи не був втрачений у бойових діях. Невидимі і недосяжні
+            Жодний з <span className={styles["span-text"]}>БпЛА “Бекфаєр”</span> за рік роботи не був втрачений у бойових діях. Невидимі і недосяжні
             для ворога.
           </p>
         </div>
