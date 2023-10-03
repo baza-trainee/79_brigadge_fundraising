@@ -34,13 +34,11 @@ const Header = ({ links = navLinks }) => {
   return (
     <header className={styles.header_container}>
       <div className={styles.header_wrapper}>
-        <div className={styles.logo_wrapper}>
-          <img
-            className={styles.logo_img}
-            src={Logo}
-            alt="logo"
-            onClick={handleLogoClick}
-          />
+        <div
+          className={styles.logo_wrapper}
+          onClick={() => handleButtonClick("ukrainian-wings")}
+        >
+          <img className={styles.logo_img} src={Logo} alt="logo" />
         </div>
         <nav
           className={
