@@ -1,28 +1,38 @@
 .progressBar_section {
   background-color: var(--main-green);
-  padding: 80px 0px;
+  padding: 40px 0px;
 }
 
 .progressBar__title {
   color: var(--black);
   font-family: var(--bold-font-family);
-  font-size: var(--h2-font-size);
-  line-height: var(--h2-line-height);
+  font-size: 24px;
+  line-height: 1.3;
   font-weight: 400;
   text-align: left;
-  margin-bottom: 5px;
+}
+
+.progressBar__content_wraper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 76px;
+  margin-bottom: 50px;
+  margin-top: 5px;
+  padding-top: 64px;
+  justify-content: center;
+  align-items: flex-end;
 }
 
 .progressBar__img_wrapper {
   position: relative;
-  width: 297px;
+  width: 208px;
 }
 .progressBar__img_wrapper::after {
-  content: "";
-  background-image: url("../../assets/img/progress-bar/explosion.gif");
+  content: '';
+  background-image: url('../../assets/img/progress-bar/explosion.gif');
   position: absolute;
-  top: -111px;
-  left: 53px;
+  top: -87px;
+  left: 63px;
   width: 70%;
   height: 200%;
   background-size: cover;
@@ -31,24 +41,15 @@
 
 .progressBar__btn_list {
   display: flex;
-  gap: 60px;
-  margin-top: 50px;
+  gap: 20px;
+  /* margin-top: 50px; */
 }
 
-.progressBar__content_wraper {
-  display: flex;
-  gap: 37px;
-  margin-bottom: 99px;
-  margin-top: 5px;
-  padding-top: 125px;
-  justify-content: center;
-  align-items: flex-end;
-}
 .progressBar__scale_wrapper {
-  width: 970px;
-  height: 80px;
+  width: 100%;
+  height: 60px;
   border: 3px solid var(--black);
-  padding: 10px;
+  padding: 7px;
   position: relative;
 }
 
@@ -56,36 +57,39 @@
 .progressBar__scale_amount_percent,
 .progressBar__scale_current_number,
 .progressBar__scale_current_percent {
-  color: var(--white);
-  font-size: 24px;
+  font-size: 16px;
   font-family: var(--bold-font-family);
-  font-weight: 400px;
+  font-weight: 400;
   line-height: 1.2;
   position: absolute;
 }
 
 .progressBar__scale_amount_number {
-  bottom: -44px;
+  bottom: -28px;
   right: 0;
+  color: var(--white);
 }
 .progressBar__scale_amount_percent {
-  top: -44px;
+  top: -28px;
   right: 0;
+  color: var(--white);
 }
 
 .progressBar__scale_current_number {
-  bottom: -44px;
+  bottom: -28px;
+  color: var(--black);
 }
 .progressBar__scale_current_percent {
-  top: -44px;
+  top: -28px;
   left: 26.7%;
+  color: var(--black);
 }
 
 .progressBar__scale {
-  gap: 10px;
+  gap: 5px;
   display: flex;
   width: 100%;
-  height: 60px;
+  height: 40px;
   position: relative;
 }
 
@@ -101,12 +105,247 @@
 }
 
 .progressBar__scale_plane {
-  content: "";
+  content: '';
   position: absolute;
-  height: 90px;
-  width: 90px;
+  height: 45px;
+  width: 45px;
+
   background-image: url(../../assets/img/progress-bar/plane.svg);
-  top: -130px;
+  top: -70px;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 319px) {
+  .progressBar__title {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 420px) {
+  .progressBar__title {
+    font-size: 28px;
+  }
+  .progressBar__content_wraper {
+    gap: 85px;
+    margin-top: 0px;
+    padding-top: 69px;
+  }
+
+  .progressBar__img_wrapper {
+    width: 273px;
+  }
+  .progressBar__img_wrapper::after {
+    top: -113px;
+    left: 83px;
+  }
+
+  .progressBar__scale_wrapper {
+    height: 70px;
+    padding: 7px;
+  }
+
+  .progressBar__scale_amount_number,
+  .progressBar__scale_amount_percent,
+  .progressBar__scale_current_number,
+  .progressBar__scale_current_percent {
+    font-size: 18px;
+  }
+
+  .progressBar__scale_amount_number {
+    bottom: -35px;
+  }
+  .progressBar__scale_amount_percent {
+    top: -35px;
+  }
+
+  .progressBar__scale_current_number {
+    bottom: -35px;
+  }
+  .progressBar__scale_current_percent {
+    top: -35px;
+    left: 26.7%;
+  }
+
+  .progressBar__scale {
+    gap: 10px;
+    height: 50px;
+  }
+
+  .progressBar__scale_plane {
+    top: -75px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .progressBar_section {
+    padding: 60px 0px;
+  }
+
+  .progressBar__title {
+    font-size: 28px;
+  }
+
+  .progressBar__content_wraper {
+    flex-wrap: nowrap;
+    gap: 21px;
+    margin-bottom: 73px;
+    margin-top: 0px;
+    padding-top: 60px;
+  }
+
+  .progressBar__img_wrapper {
+    width: 180px;
+  }
+  .progressBar__img_wrapper::after {
+    top: -56px;
+    left: 47px;
+  }
+
+  .progressBar__scale_wrapper {
+    width: 100%;
+    height: 70px;
+  }
+
+  .progressBar__scale_amount_number,
+  .progressBar__scale_amount_percent,
+  .progressBar__scale_current_number,
+  .progressBar__scale_current_percent {
+    font-size: 18px;
+  }
+
+  .progressBar__scale_amount_number {
+    bottom: -32px;
+  }
+  .progressBar__scale_amount_percent {
+    top: -32px;
+  }
+
+  .progressBar__scale_current_number {
+    bottom: -32px;
+  }
+  .progressBar__scale_current_percent {
+    top: -32px;
+  }
+
+  .progressBar__scale {
+    height: 50px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .progressBar__title {
+    font-size: 36px;
+  }
+
+  .progressBar__content_wraper {
+    gap: 10px;
+    margin-bottom: 64px;
+    margin-top: 0px;
+    padding-top: 100px;
+  }
+
+  .progressBar__img_wrapper {
+    width: 122px;
+  }
+  .progressBar__img_wrapper::after {
+    top: -45px;
+    left: 34px;
+  }
+
+  .progressBar__scale_wrapper {
+    width: 100%;
+    height: 80px;
+  }
+
+  .progressBar__scale_amount_number,
+  .progressBar__scale_amount_percent,
+  .progressBar__scale_current_number,
+  .progressBar__scale_current_percent {
+    font-size: 20px;
+  }
+
+  .progressBar__scale_amount_number {
+    bottom: -35px;
+  }
+  .progressBar__scale_amount_percent {
+    top: -35px;
+  }
+
+  .progressBar__scale_current_number {
+    bottom: -35px;
+  }
+  .progressBar__scale_current_percent {
+    top: -35px;
+    color: var(--white);
+  }
+
+  .progressBar__scale {
+    height: 60px;
+  }
+  .progressBar__scale_plane {
+    height: 50px;
+    width: 60px;
+    top: -87px;
+  }
+}
+
+@media screen and (min-width: 1680px) {
+  .progressBar_section {
+    padding: 80px 0px;
+  }
+
+  .progressBar__title {
+    font-size: 48px;
+  }
+
+  .progressBar__content_wraper {
+    flex-wrap: nowrap;
+    gap: 37px;
+    margin-bottom: 99px;
+    padding-top: 134px;
+  }
+
+  .progressBar__img_wrapper {
+    width: 273px;
+  }
+  .progressBar__img_wrapper::after {
+    top: -91px;
+    left: 68px;
+  }
+
+  .progressBar__btn_list {
+    gap: 48px;
+  }
+
+  .progressBar__scale_wrapper {
+    height: 80px;
+  }
+
+  .progressBar__scale_amount_number,
+  .progressBar__scale_amount_percent,
+  .progressBar__scale_current_number,
+  .progressBar__scale_current_percent {
+    font-size: 24px;
+  }
+
+  .progressBar__scale_amount_number {
+    bottom: -48px;
+  }
+  .progressBar__scale_amount_percent {
+    top: -48px;
+  }
+
+  .progressBar__scale_current_number {
+    bottom: -48px;
+  }
+  .progressBar__scale_current_percent {
+    top: -48px;
+  }
+
+  .progressBar__scale_plane {
+    height: 90px;
+    width: 90px;
+    top: -130px;
+  }
 }
