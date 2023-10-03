@@ -50,7 +50,7 @@ const jarInfo = {
   ],
 };
 
-const ProgressBar = () => {
+const ProgressBar = ({openModal}) => {
   const [lengthScale, setLengthScale] = useState(0);
 
   const totalAmount = jarInfo.fundraisingGoal;
@@ -139,10 +139,10 @@ const ProgressBar = () => {
         </div>
         <ul className={styles.progressBar__btn_list}>
           <li>
-            <JarDetailsButton>Останній донат</JarDetailsButton>
+            <JarDetailsButton modal={() => openModal('recent')}>Останній донат</JarDetailsButton>
           </li>
           <li>
-            <JarDetailsButton>Найбільший донат</JarDetailsButton>
+            <JarDetailsButton modal={() => openModal('largest')}>Найбільший донат</JarDetailsButton>
           </li>
         </ul>
       </Container>
