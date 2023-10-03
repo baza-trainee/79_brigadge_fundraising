@@ -5,7 +5,7 @@ import styles from './UkrainianWings.module.css';
 
 const UkrainianWings = () => {
   return (
-    <section className={styles['ukrainian-wings']}>
+    <section className={styles['ukrainian-wings']} id='ukrainian-wings'>
       <div className={styles['ukrainian-wings-wrapper']}>
         <Container className={styles['ukrainian-wings-container']}>
           <div
