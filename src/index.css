@@ -4,10 +4,6 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz@8..144&family=Russo+One&display=swap");
 
-body {
-  background-color: peachpuff;
-}
-
 html {
   scroll-behavior: smooth;
 }

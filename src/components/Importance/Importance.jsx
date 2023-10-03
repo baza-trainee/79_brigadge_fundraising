@@ -1,13 +1,13 @@
-import Container from "../layouts/Container/Container";
-import styles from "./Importance.module.css";
-import img1 from "../../assets/img/importance/importance1-desktop.jpg";
-import img1x2 from "../../assets/img/importance/importance1-desktop@2x.jpg";
-import img2 from "../../assets/img/importance/importance2-desktop.jpg";
-import img2x2 from "../../assets/img/importance/importance2-desktop@2x.jpg";
-import img3 from "../../assets/img/importance/importance3-desktop.jpg";
-import img3x2 from "../../assets/img/importance/importance3-desktop@2x.jpg";
-import img4 from "../../assets/img/importance/importance4-desktop.jpg";
-import img4x2 from "../../assets/img/importance/importance4-desktop@2x.jpg";
+import Container from '../layouts/Container/Container';
+import styles from './Importance.module.css';
+import img1 from '../../assets/img/importance/importance1-desktop.jpg';
+import img1x2 from '../../assets/img/importance/importance1-desktop@2x.jpg';
+import img2 from '../../assets/img/importance/importance2-desktop.jpg';
+import img2x2 from '../../assets/img/importance/importance2-desktop@2x.jpg';
+import img3 from '../../assets/img/importance/importance3-desktop.jpg';
+import img3x2 from '../../assets/img/importance/importance3-desktop@2x.jpg';
+import img4 from '../../assets/img/importance/importance4-desktop.jpg';
+import img4x2 from '../../assets/img/importance/importance4-desktop@2x.jpg';
 
 const Importance = () => {
   return (
@@ -34,7 +34,7 @@ const Importance = () => {
 
             <div className={styles.importance__info}>
               <p className={styles.importance__info_text}>
-                {" "}
+                {' '}
                 Зниження ризиків для бійців на передовій.
               </p>
             </div>
@@ -58,7 +58,7 @@ const Importance = () => {
 
             <div className={styles.importance__info}>
               <p className={styles.importance__info_text}>
-                {" "}
+                {' '}
                 Максимізація ефективності у знищенні ворога.
               </p>
             </div>
@@ -108,7 +108,7 @@ const Importance = () => {
 
             <div className={styles.importance__info}>
               <p
-                className={`${styles.importance__info_text} ${styles.bigText}`}
+                className={`${styles.importance__info_text} ${styles.bigText} ${styles.bigText_last}`}
               >
                 Забезпечення ЗСУ передовими та надійними БпЛА для бойових
                 операцій.
@@ -117,7 +117,7 @@ const Importance = () => {
           </li>
         </ul>
         <p className={styles.importance__text}>
-          Підтримаємо український продукт, який надає не просто крила, а{" "}
+          Підтримаємо український продукт, який надає не просто крила, а{' '}
           <span className={styles.text_color}>українські крила</span> нашим
           військовим!
         </p>
