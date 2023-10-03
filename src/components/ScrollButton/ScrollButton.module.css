@@ -1,8 +1,8 @@
 .container {
     position: fixed;
     z-index: 90;
-    bottom: 90px;
-    right: 120px;
+    bottom: 20px;
+    right: 10px;
     width: 88px;
     height: 110px;
     visibility: hidden;
@@ -21,17 +21,12 @@
 }
 
 .animate {
-    animation: scrollButtonAnimation 1s linear 0.1s;
+    animation: scrollButtonAnimation .6s linear 0.1s;
 }
 
 @keyframes scrollButtonAnimation {
     0% {
         transform: translateY(0);
-        opacity: 1;
-    }
-
-    25% {
-        transform: translateY(+5vh);
         opacity: 1;
     }
 
@@ -43,5 +38,33 @@
     100% {
         transform: translateY(-120vh);
         opacity: 0;
+    }
+}
+
+@media (min-width: 420px) {
+    .container {
+        bottom: 20px;
+        right: 20px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        bottom: 20px;
+        right: 54px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        bottom: 30px;
+        right: 62px;
+    }
+}
+
+@media (min-width: 1680px) {
+    .container {
+        bottom: 40px;
+        right: 200px;
     }
 }

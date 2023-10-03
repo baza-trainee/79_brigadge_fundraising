@@ -1,56 +1,56 @@
-import JarDetailsButton from "../JarDetailsButton/JarDetailsButton";
-import Container from "../layouts/Container/Container";
-import styles from "./ProgressBar.module.css";
-import boat from "../../assets/img/progress-bar/boat.svg";
+import JarDetailsButton from '../JarDetailsButton/JarDetailsButton';
+import Container from '../layouts/Container/Container';
+import styles from './ProgressBar.module.css';
+import boat from '../../assets/img/progress-bar/boat.svg';
 
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState } from 'react';
 
 const jarInfo = {
   fundraisingGoal: 250000,
-  totalDonations: 100000,
+  totalDonations: 70000,
   recentDonations: [
     {
-      donor: "53************89",
+      donor: '53************89',
       donationAmount: 150.0,
     },
     {
-      donor: "Donor3",
+      donor: 'Donor3',
       donationAmount: 600.0,
     },
     {
-      donor: "Donor4",
+      donor: 'Donor4',
       donationAmount: 500.0,
     },
     {
-      donor: "Donor5",
+      donor: 'Donor5',
       donationAmount: 400.0,
     },
   ],
   largestDonations: [
     {
-      donor: "Donor1",
+      donor: 'Donor1',
       donationAmount: 1000.0,
     },
     {
-      donor: "Donor2",
+      donor: 'Donor2',
       donationAmount: 750.0,
     },
     {
-      donor: "Donor3",
+      donor: 'Donor3',
       donationAmount: 600.0,
     },
     {
-      donor: "Donor4",
+      donor: 'Donor4',
       donationAmount: 500.0,
     },
     {
-      donor: "Donor5",
+      donor: 'Donor5',
       donationAmount: 400.0,
     },
   ],
 };
 
-const ProgressBar = () => {
+const ProgressBar = ({openModal}) => {
   const [lengthScale, setLengthScale] = useState(0);
 
   const totalAmount = jarInfo.fundraisingGoal;
@@ -62,10 +62,10 @@ const ProgressBar = () => {
   useEffect(() => {
     fixedScaleLenght();
 
-    window.addEventListener("resize", fixedScaleLenght);
+    window.addEventListener('resize', fixedScaleLenght);
 
     return () => {
-      window.removeEventListener("resize", fixedScaleLenght);
+      window.removeEventListener('resize', fixedScaleLenght);
     };
   }, []);
 
@@ -80,15 +80,16 @@ const ProgressBar = () => {
       setLengthScale(18);
     }
     if (768 > window.innerWidth && window.innerWidth >= 420) {
+      console.log(window.innerWidth);
       setLengthScale(15);
     }
-    if (420 > window.innerWidth && window.innerWidth >= 320) {
+    if (420 > window.innerWidth) {
       setLengthScale(13);
     }
   }
 
   function formatedAmount(amount) {
-    return amount.toLocaleString("uk-UA");
+    return amount.toLocaleString('uk-UA');
   }
 
   return (
@@ -116,7 +117,7 @@ const ProgressBar = () => {
                   className={`${styles.progress_segment} ${
                     index < (completionPercentage * lengthScale) / 100
                       ? `${styles.completed}`
-                      : ""
+                      : ''
                   }`}
                 />
               ))}
@@ -138,10 +139,10 @@ const ProgressBar = () => {
         </div>
         <ul className={styles.progressBar__btn_list}>
           <li>
-            <JarDetailsButton>Крайній донат</JarDetailsButton>
+            <JarDetailsButton modal={() => openModal('recent')}>Останній донат</JarDetailsButton>
           </li>
           <li>
-            <JarDetailsButton>Найбільший донат</JarDetailsButton>
+            <JarDetailsButton modal={() => openModal('largest')}>Найбільший донат</JarDetailsButton>
           </li>
         </ul>
       </Container>

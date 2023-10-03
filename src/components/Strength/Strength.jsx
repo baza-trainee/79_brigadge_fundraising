@@ -11,14 +11,13 @@ const Strength = () => {
       <Container>
         <h2 className={styles['strength-title']}>В єднанні - сила!</h2>
         <div className={styles['strength-content-wrapper']}>
-          <h3 className={styles['strength-text']}>
-            Розповідай друзям про збір.
-            <br /> Окриляй злих птахів.
-            <br />
-            <span className={styles['strength-text-span']}>
+          <div className={styles['strength-text']}>
+            <p>Розповідай друзям про збір.</p>
+            <p>Окриляй злих птахів.</p>
+            <p><span className={styles['strength-text-span']}>
               Наближай перемогу!
-            </span>
-          </h3>
+            </span></p>
+          </div>
 
           <img className={styles['strength-img']} src={plane} alt="" />
 
