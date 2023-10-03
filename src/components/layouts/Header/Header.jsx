@@ -2,7 +2,9 @@
 import { useState } from "react";
 import { useRef } from "react";
 
-import Logo from "../../../images/logo.png";
+import Container from "../Container/Container";
+
+import Logo from "../../../assets/img/header/logo.png";
 import styles from "./Header.module.css";
 
 const navLinks = [
@@ -25,9 +27,10 @@ const Header = ({ links = navLinks }) => {
   };
 
   return (
-    <header className={styles.header_container}>
+    <header className={styles.header}>
+      <Container>
       <div className={styles.header_wrapper}>
-        <div className={styles.logo_wrapper}>
+        <div className={styles.logo_wrapper} onClick={() => handleButtonClick('ukrainian-wings')}>
           <img className={styles.logo_img} src={Logo} alt="logo" />
         </div>
         <nav
@@ -65,6 +68,7 @@ const Header = ({ links = navLinks }) => {
             : styles.burger_menu_blur
         }
       ></div>
+      </Container>
     </header>
   );
 };
