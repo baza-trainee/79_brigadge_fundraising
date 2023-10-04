@@ -70,6 +70,7 @@ const Header = ({ links = navLinks }) => {
               ? `${styles.burger_menu_blur} ${styles.active}`
               : styles.burger_menu_blur
           }
+          onClick={() => setActive(false)}
         ></div>
       </Container>
     </header>
