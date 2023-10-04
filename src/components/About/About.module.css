@@ -5,6 +5,7 @@
 
 .about-wrapper {
     padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .about-title {
@@ -17,8 +18,14 @@
 
 .about-content-wrapper {
     display: flex;
+    flex-direction: row-reverse;
     gap: 143px;
     margin-top: 100px;
+    overflow: hidden;
+}
+
+.about-image {
+    float: right;
 }
 
 .about-text {
@@ -28,9 +35,104 @@
     line-height: var(--body-1-line-height);
     font-weight: 400;
     text-align: start;
+    z-index: 1;
+    position: relative;
 }
 
 .background-image {
     position: absolute;
     top: 400px;
+}
+
+@media (max-width: 1680px) {
+
+    .about-title {
+        font-size: 36px;
+        line-height: var(--h2-line-height);
+    }
+
+    .about-content-wrapper {
+        display: block;
+    }
+
+    .about-image {
+        width: 260px;
+        height: 320px;
+        float: right;
+        margin-left: 30px;
+    }
+
+    .about-text {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    .background-image {
+        position: absolute;
+        top: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .about-wrapper {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .about-title {
+        font-size: 28px;
+        line-height: 33px;
+    }
+
+    .about-content-wrapper {
+        display: block;
+        margin-top: 50px;
+    }
+
+    .about-image {
+        width: 180px;
+        height: 211px;
+        margin-left: 15px;
+        margin-top: 42px;
+    }
+
+    .about-text {
+        font-size: 16px;
+        line-height: 22px;
+    }
+}
+
+@media (max-width: 420px) {
+
+    .about-wrapper {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .about-title {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .about-content-wrapper {
+        display: block;
+        margin-top: 50px;
+    }
+
+    .about-image {
+        width: 130px;
+        height: 152px;
+        margin-left: 5px;
+        margin-top: 2px;
+    }
+
+    .about-text {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .background-image {
+        display: none;
+    }
 }
