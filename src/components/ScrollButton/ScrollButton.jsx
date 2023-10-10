@@ -9,8 +9,7 @@ export const ScrollButton = () => {
 
     useEffect(() => {
         const handleScroll = () => {
-            console.log(window.scrollY);
-          if (window.scrollY > 500) {
+          if (window.scrollY > 1500) {
             setScrollBtn(true);
           } else {
             setScrollBtn(false);
@@ -34,16 +33,16 @@ export const ScrollButton = () => {
             top: 0,
             behavior: "smooth",
         });
-        }, 500);
+        }, 200);
     };
 
     return (
         <div
-        ref={ref}
-        onClick={handleScroll}
-        className={`${styles.container} ${isScrollBtn ? styles.active : ""}`}
+          ref={ref}
+          onClick={handleScroll}
+          className={`${styles.container} ${isScrollBtn ? styles.active : ""}`}
         >
-        <img className={styles.icon} src={ScrollBtn} alt="scroll_btn" />
+          <img className={styles.icon} src={ScrollBtn} alt="scroll_btn" />
         </div>
   );
 };
