@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import bavovna from '../../assets/img/jar_modal/bavovna.png';
 import heart from '../../assets/img/jar_modal/heart.svg';
 import plane from '../../assets/img/jar_modal/plane.svg';
@@ -65,6 +66,21 @@ const JarModal = ({isVisible, setIsVisible, activeModal, setActiveModal}) => {
        }
     ]
  };
+
+ useEffect(() => {
+  const closeModal = (event) => {
+    if (event.code === 'Escape') {
+      setIsVisible(false)
+    }
+  }
+
+  document.body.addEventListener('keyup', (event) => closeModal(event))
+
+  return () => {
+    window.removeEventListener('keyup', closeModal);
+  };
+}, []);
+
     
   return (
     <div
@@ -116,6 +132,12 @@ const JarModal = ({isVisible, setIsVisible, activeModal, setActiveModal}) => {
             <p className={`${styles['goal-text']} ${styles['ship-text']}`}>Ближче до перемоги!</p>
           </>
         }
+        <button 
+            className={styles['modal-btn-down']}
+            onClick={() => setIsVisible(false)}
+        >
+          На головну      
+        </button>
       </div>
     </div>
   )
