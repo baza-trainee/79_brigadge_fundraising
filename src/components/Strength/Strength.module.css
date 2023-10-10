@@ -92,13 +92,13 @@
     }
 
     .strength-text {
-        font-size: 30px;
+        font-size: 25px;
         line-height: 1;
     }
 
     .strength-text-span {
         line-height: 1;
-        font-size: 30px;
+        font-size: 25px;
     }
 
     .strength-img {
@@ -109,5 +109,10 @@
     .strength-share-btn {
         padding: 15px 40px;
         font-size: 30px;
+    }
+
+    .strength-title {
+        font-size: 30px;
+        line-height: 1;
     }
 }
