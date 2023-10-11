@@ -3,16 +3,13 @@
     z-index: 90;
     bottom: 20px;
     right: 10px;
-    width: 88px;
-    height: 110px;
+    width: 59px;
+    height: 90px;
     visibility: hidden;
     opacity: 0;
     transition: 0.3s ease-in;
     cursor: pointer;
-}
-
-.icon {
-    object-fit: fill;
+    background-image: url(../../assets/img/scroll_button/plane_up_320px.png);
 }
 
 .active {
@@ -43,8 +40,11 @@
 
 @media (min-width: 420px) {
     .container {
+        width: 88px;
+        height: 110px;
         bottom: 20px;
         right: 20px;
+        background-image: url(../../assets/img/scroll_button/plane_up.png);
     }
 }
 

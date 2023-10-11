@@ -150,15 +150,3 @@
         width: 420px;
     }
 }
-
-@media (min-width: 768px) {
-    .modal-content {
-        width: 320px;
-    }
-}
-
-@media (min-width: 1024px) {
-    .modal-content {
-        width: 420px;
-    }
-}
