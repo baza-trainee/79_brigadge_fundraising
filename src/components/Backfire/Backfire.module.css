@@ -12,8 +12,7 @@
 }
 
 .backfire-title {
-  padding-top: 150px;
-  padding-bottom: 100px;
+  margin-bottom: 100px;
 }
 
 .backfire-title,
@@ -298,8 +297,7 @@
 @media screen and (min-width: 320px) and (max-width: 420px) {
   .backfire-title {
     font-size: 28px;
-    padding-bottom: 50px;
-    padding-top: 80px;
+    margin-bottom: 50px;
   }
   .backfire-content {
     flex-direction: column;
@@ -375,8 +373,7 @@
 @media screen and (max-width: 320px) {
   .backfire-title {
     font-size: var(--body-1-font-size);
-    padding-bottom: 30px;
-    padding-top: 80px;
+    margin-bottom: 30px;
   }
   .backfire-content {
     flex-direction: column;
