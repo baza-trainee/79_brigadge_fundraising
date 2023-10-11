@@ -42,7 +42,7 @@ export const ScrollButton = () => {
           onClick={handleScroll}
           className={`${styles.container} ${isScrollBtn ? styles.active : ""}`}
         >
-          <img className={styles.icon} src={ScrollBtn} alt="scroll_btn" />
+          {/* <img className={styles.icon} src={ScrollBtn} alt="scroll_btn" /> */}
         </div>
   );
 };
