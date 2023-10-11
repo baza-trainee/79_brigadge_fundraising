@@ -111,7 +111,7 @@ const JarModal = ({isVisible, setIsVisible, activeModal, setActiveModal}) => {
         </div>
         { activeModal === 'recent' && 
           <>
-            <View data={data.recentDonations} icon={plane}/>
+            <View data={data.recentDonations} icon={heart}/>
             <div className={styles['bavovna-wrapper']}>
               <img src={bavovna} alt="bavovna" />
               <img src={bavovna} alt="bavovna" />
