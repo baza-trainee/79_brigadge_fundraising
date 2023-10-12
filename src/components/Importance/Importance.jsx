@@ -1,13 +1,16 @@
 import Container from '../layouts/Container/Container';
 import styles from './Importance.module.css';
-import img1 from '../../assets/img/importance/importance1-desktop.jpg';
-import img1x2 from '../../assets/img/importance/importance1-desktop@2x.jpg';
-import img2 from '../../assets/img/importance/importance2-desktop.jpg';
-import img2x2 from '../../assets/img/importance/importance2-desktop@2x.jpg';
-import img3 from '../../assets/img/importance/importance3-desktop.jpg';
-import img3x2 from '../../assets/img/importance/importance3-desktop@2x.jpg';
-import img4 from '../../assets/img/importance/importance4-desktop.jpg';
-import img4x2 from '../../assets/img/importance/importance4-desktop@2x.jpg';
+
+import {
+  img1,
+  img1x2,
+  img2,
+  img2x2,
+  img3,
+  img3x2,
+  img4,
+  img4x2,
+} from '../../assets/img/importance';
 
 const Importance = () => {
   return (
@@ -20,7 +23,7 @@ const Importance = () => {
               <picture>
                 <source
                   srcSet={`${img1} 1x, ${img1x2} 2x`}
-                  media="(min-width: 1200px)"
+                  media="(min-width: 320px)"
                 />
                 <img
                   src={img1}
