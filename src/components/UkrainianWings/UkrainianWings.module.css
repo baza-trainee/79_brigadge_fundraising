@@ -103,6 +103,7 @@
   padding: 15.5px 0;
   width: 280px;
   transform: translateX(-10px);
+  transition: all 0.3s ease;
 }
 
 .ukrainian-wings-btn:hover {

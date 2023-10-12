@@ -80,6 +80,14 @@
 }
 
 .wings-block2-button a {
+    transition: all 0.3s ease;
+}
+
+.wings-block2-button:hover a {
+    color: var(--black);
+}
+
+.wings-block2-button a {
     text-decoration: none;
     font-family: var(--bold-font-family);
     color: var(--button-dark-default);
