@@ -37,7 +37,7 @@
 
 .wings-block1 {
     position: relative;
-    flex: 0 0 40%;
+    flex: 1 1 40%;
     background-image: url('../../assets/img/wings/wings-vector_1.svg');
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -45,7 +45,7 @@
 
 .wings-block2 {
     position: relative;
-    flex: 0 0 57%;
+    flex: 1 1 57%;
     background-image: url('../../assets/img/wings/airfield.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -54,6 +54,7 @@
 .wings-block1-text {
     position: absolute;
     text-transform: uppercase;
+    padding: 0 10px;
     font-size: 48px;
     line-height: 67px;
     top: 50%;
@@ -69,12 +70,12 @@
 }
 
 .wings-block2-content img {
-    margin-top: -200px;
+    margin-top: -130px;
 }
 
 .wings-block2-button {
     font-size: 36px;
-    margin: 40px 0;
+    margin: 0 0 40px;
     padding: 30px 60px;
 }
 
@@ -84,16 +85,27 @@
     color: var(--button-dark-default);
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1280px) {
+    .wings-block2-content img {
+        margin-top: -200px;
+    }
+
     .wings-block1-text {
-        font-size: 35px;
+        font-size: 28px;
         line-height: 1.2;
     }
+}
+
+@media (max-width: 1024px) {
 
     .wings-block2-button {
         font-size: 25px;
-        margin: 20px 0;
+        margin: 0 0 30px;
         padding: 15px 30px;
+    }
+
+    .wings-content-wrapper {
+        margin: 80px 0;
     }
 }
 
@@ -103,13 +115,18 @@
         margin: 60px 0;
     }
 
+    .wings-block2 {
+        margin: 0 auto;
+        max-width: 500px;
+    }
+
     .wings-block1 {
         min-height: 340px;
     }
 
     .wings-block1-text {
-        font-size: 35px;
-        line-height: 1.2;
+        font-size: 25px;
+        line-height: 1;
     }
 
     .wings-text {
@@ -119,8 +136,8 @@
 }
 
 @media (max-width: 480px) {
-    .wings-block1-text {
-        font-size: 30px;
+    .wings-title {
+        font-size: 35px;
     }
 
     .wings-content-wrapper {
@@ -132,6 +149,10 @@
     }
 
     .wings-text {
+        font-size: 20px;
+    }
+
+    .wings-block2-button {
         font-size: 20px;
     }
 }
