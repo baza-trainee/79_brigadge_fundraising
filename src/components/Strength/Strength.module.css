@@ -50,6 +50,7 @@
     max-height: 100px;
     padding: 28.5px 96px;
     text-align: end;
+    transition: all 0.3s ease;
 }
 
 .strength-share-btn:hover {
