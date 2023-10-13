@@ -42,6 +42,8 @@
 .progressBar__btn_list {
   display: flex;
   gap: 20px;
+  /* align-items: center; */
+  /* justify-content: center; */
   /* margin-top: 50px; */
 }
 
@@ -122,6 +124,11 @@
   }
 }
 
+@media screen and (min-width: 320px) {
+  .progressBar__btn_list {
+    justify-content: center;
+  }
+}
 @media screen and (min-width: 420px) {
   .progressBar__title {
     font-size: 28px;
@@ -230,6 +237,9 @@
 
   .progressBar__scale {
     height: 50px;
+  }
+  .progressBar__btn_list {
+    justify-content: flex-start;
   }
 }
 
