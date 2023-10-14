@@ -92,8 +92,8 @@
   font-style: normal;
   line-height: 120%;
   font-weight: 400;
-
   text-decoration: none;
+  transition: all 0.3s ease;
 }
 
 .button_donat:hover {
