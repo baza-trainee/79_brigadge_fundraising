@@ -99,7 +99,7 @@
     }
 
     .wings-block1-text {
-        font-size: 28px;
+        font-size: 32px;
         line-height: 1.2;
     }
 }
@@ -130,11 +130,6 @@
 
     .wings-block1 {
         min-height: 340px;
-    }
-
-    .wings-block1-text {
-        font-size: 25px;
-        line-height: 1;
     }
 
     .wings-text {
