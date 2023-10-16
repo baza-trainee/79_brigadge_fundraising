@@ -80,7 +80,6 @@ const ProgressBar = ({ openModal }) => {
       setLengthScale(18);
     }
     if (768 > window.innerWidth && window.innerWidth >= 420) {
-      console.log(window.innerWidth);
       setLengthScale(15);
     }
     if (420 > window.innerWidth) {

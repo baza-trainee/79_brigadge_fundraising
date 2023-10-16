@@ -96,6 +96,7 @@
   position: absolute;
   left: -0.0625rem;
   top: -0.0625rem;
+
   pointer-events: none;
   z-index: -5;
 }

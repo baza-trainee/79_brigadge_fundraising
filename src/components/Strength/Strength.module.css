@@ -1,45 +1,44 @@
 .strength {
-    background-color: var(--black);
-    padding-top: 150px;
-    padding-bottom: 80px;
+  background-color: var(--black);
+  padding-top: 150px;
+  padding-bottom: 80px;
 }
 
 .strength-title {
-    color: var(--white);
-    font-family: var(--bold-font-family);
-    font-size: var(--h2-font-size);
-    line-height: var(--h2-line-height);
-    font-weight: 400;
+  color: var(--white);
+  font-family: var(--bold-font-family);
+  font-size: var(--h2-font-size);
+  line-height: var(--h2-line-height);
+  font-weight: 400;
 }
 
 .strength-content-wrapper {
-    display: flex;
-    margin-top: 100px;
-    gap: 17px;
-    align-items: center;
+  display: flex;
+  margin-top: 100px;
+  gap: 17px;
+  align-items: center;
 }
 
 .strength-text {
-    color: var(--white);
-    font-family: var(--bold-font-family);
-    font-size: var(--h3-font-size);
-    line-height: var(--h3-line-height);
-    font-weight: 400;
-    text-align: start;
+  color: var(--white);
+  font-family: var(--bold-font-family);
+  font-size: var(--h3-font-size);
+  line-height: var(--h3-line-height);
+  font-weight: 400;
+  text-align: start;
 }
 
 .strength-text-span {
-    color: var(--main-green);
-    font-family: var(--bold-font-family);
-    font-size: var(--h3-font-size);
-    line-height: var(--h3-line-height);
-    font-weight: 400;
-    text-align: start;
+  color: var(--main-green);
+  font-family: var(--bold-font-family);
+  font-size: var(--h3-font-size);
+  line-height: var(--h3-line-height);
+  font-weight: 400;
+  text-align: start;
 }
 
-.strength-img {}
-
 .strength-share-btn {
+
     color: var(--button-dark-default);
     background-color: var(--white);
     font-family: var(--bold-font-family);
@@ -51,69 +50,70 @@
     padding: 28.5px 96px;
     text-align: end;
     transition: all 0.3s ease;
+
 }
 
 .strength-share-btn:hover {
-    color: var(--black);
-    background-color: var(--buttton-light-hover);
+  color: var(--black);
+  background-color: var(--buttton-light-hover);
 }
 
 .strength-share-btn:active {
-    background-color: var(--button-light-pressing);
+  background-color: var(--button-light-pressing);
 }
 
 @media (max-width: 992px) {
-    .strength {
-        padding-top: 80px;
-        padding-bottom: 60px;
-    }
+  .strength {
+    padding-top: 80px;
+    padding-bottom: 60px;
+  }
 
-    .strength-content-wrapper {
-        flex-direction: column;
-        margin-top: 50px;
-    }
+  .strength-content-wrapper {
+    flex-direction: column;
+    margin-top: 50px;
+  }
 
-    .strength-text {
-        text-align: center;
-    }
+  .strength-text {
+    text-align: center;
+  }
 
-    .strength-text-span {
-        text-align: center;
-    }
+  .strength-text-span {
+    text-align: center;
+  }
 
-    .strength-img {
-        transform: rotate(90deg);
-        margin: 50px 0;
-    }
+  .strength-img {
+    transform: rotate(90deg);
+    margin: 50px 0;
+  }
 }
 
 @media (max-width: 768px) {
-    .strength {
-        padding-bottom: 0px;
-    }
+  .strength {
+    padding-bottom: 0px;
+  }
 
-    .strength-text {
-        font-size: 25px;
-        line-height: 1;
-    }
+  .strength-text {
+    font-size: 25px;
+    line-height: 1;
+  }
 
-    .strength-text-span {
-        line-height: 1;
-        font-size: 25px;
-    }
+  .strength-text-span {
+    line-height: 1;
+    font-size: 25px;
+  }
 
-    .strength-img {
-        height: 100px;
-        margin: 50px 0;
-    }
+  .strength-img {
+    height: 100px;
+    margin: 50px 0;
+  }
 
-    .strength-share-btn {
-        padding: 15px 40px;
-        font-size: 30px;
-    }
+  .strength-share-btn {
+    padding: 15px 40px;
+    font-size: 30px;
+  }
 
-    .strength-title {
-        font-size: 30px;
-        line-height: 1;
-    }
+  .strength-title {
+    font-size: 30px;
+    line-height: 1;
+  }
 }
