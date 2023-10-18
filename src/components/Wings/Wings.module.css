@@ -77,6 +77,8 @@
     font-size: 36px;
     margin: 0 0 40px;
     padding: 30px 60px;
+    border: none;
+    border-radius: unset;
 }
 
 .wings-block2-button a {
@@ -153,6 +155,7 @@
 
     .wings-text {
         font-size: 20px;
+        text-align: center;
     }
 
     .wings-block2-button {
