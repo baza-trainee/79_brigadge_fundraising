@@ -88,17 +88,11 @@ const Backfire = () => {
                   className={styles["backfire-content-example-wrapper"]}
                 >
                   <div className={styles["backfire-content-example"]}>
-                    <div
-                      className={
-                        styles["backfire-content-example-image-wrapper"]
-                      }
-                    >
-                      <img
-                        className={styles["backfire-content-example-image"]}
-                        src={image}
-                        alt={name}
-                      />
-                    </div>
+                    <img
+                      className={styles["backfire-content-example-image"]}
+                      src={image}
+                      alt={name}
+                    />
                     <span
                       className={styles["backfire-content-example-image-title"]}
                     >
