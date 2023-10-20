@@ -150,13 +150,13 @@
   margin-top: 0.4375rem;
 }
 
-@media screen and (min-width: 1280px) and (max-width: 1680px) {
+@media screen and (min-width: 80rem) and (max-width: 105rem) {
   .backfire-content {
     flex-direction: row;
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 64rem) {
   .backfire-content {
     flex-direction: column;
   }
@@ -278,7 +278,7 @@
   }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 26.25rem) {
   .backfire-title {
     font-size: 1.75rem;
     margin-bottom: 3.125rem;
