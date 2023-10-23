@@ -34,7 +34,7 @@
   font-size: var(--body-1-font-size);
   line-height: var(--body-1-line-height);
   font-weight: 400;
-  text-align: flex-start;
+  text-align: start;
   z-index: 1;
   position: relative;
 }
