@@ -42,9 +42,6 @@
 .progressBar__btn_list {
   display: flex;
   gap: 20px;
-  /* align-items: center; */
-  /* justify-content: center; */
-  /* margin-top: 50px; */
 }
 
 .progressBar__scale_wrapper {
@@ -190,7 +187,7 @@
   }
 
   .progressBar__title {
-    font-size: 28px;
+    font-size: 36px;
   }
 
   .progressBar__content_wraper {
@@ -256,11 +253,11 @@
   }
 
   .progressBar__img_wrapper {
-    width: 122px;
+    width: 200px;
   }
   .progressBar__img_wrapper::after {
-    top: -45px;
-    left: 34px;
+    top: -70px;
+    left: 57px;
   }
 
   .progressBar__scale_wrapper {
