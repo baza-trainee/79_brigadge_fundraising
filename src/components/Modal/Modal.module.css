@@ -57,7 +57,7 @@
   border: none;
   display: flex;
   align-items: center;
-  justify-content: start;
+  justify-content: flex-start;
   gap: 32px;
   z-index: 40;
 }
