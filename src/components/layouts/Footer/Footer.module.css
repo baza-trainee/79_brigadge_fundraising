@@ -29,3 +29,15 @@
     padding: 100px 0 50px;
   }
 }
+
+@media (max-width: 425px) {
+  .footer-copyright {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 320px) {
+  .footer-copyright {
+    font-size: 9px;
+  }
+}
