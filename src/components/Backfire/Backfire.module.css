@@ -219,7 +219,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .backfire-title {
     font-size: var(--h4-font-size);
   }
@@ -278,7 +278,7 @@
   }
 }
 
-@media screen and (max-width: 26.25rem) {
+@media screen and (max-width: 420px) {
   .backfire-title {
     font-size: 1.75rem;
     margin-bottom: 3.125rem;
