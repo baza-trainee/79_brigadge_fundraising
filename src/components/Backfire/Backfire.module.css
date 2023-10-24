@@ -12,7 +12,7 @@
 }
 
 .backfire-title {
-  margin-bottom: 100px;
+  margin-bottom: 6.25rem;
 }
 
 .backfire-title,
@@ -27,7 +27,7 @@
 .backfire-content {
   display: flex;
   justify-content: space-between;
-  gap: 20px;
+  gap: 1.25rem;
   z-index: 6;
 }
 
@@ -49,20 +49,9 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin-bottom: 2.5rem;
+  margin-bottom: 40px;
   width: auto;
   height: auto;
-}
-
-.backfire-content-example-image-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url("../../assets/img/backfire/frame.png");
-  background-repeat: no-repeat;
-  background-position: bottom;
-  width: 11.75rem;
-  height: 11.75rem;
 }
 
 .backfire-content-example-image {
@@ -78,15 +67,15 @@
   font-family: var(--thin-font-family);
   font-size: var(--body-2-font-size);
   text-align: left;
-  max-width: 150px;
-  margin-left: 30px;
+  max-width: 9.375rem;
+  margin-left: 1.875rem;
   font-weight: 400;
 }
 
 .backfire-content-benefits {
   display: flex;
   flex-direction: column;
-  padding-bottom: 153px;
+  padding-bottom: 9.5625rem;
   z-index: 3;
 }
 
@@ -95,7 +84,7 @@
   align-items: baseline;
   height: fit-content;
   background-color: var(--main-green);
-  padding: 2.25rem 2.438rem;
+  padding: 36px 39.008px;
 }
 
 .backfire-content-benefits-banner-title {
@@ -106,16 +95,16 @@
 .backfire-content-benefits-list {
   display: flex;
   flex-direction: column;
-  gap: 4.688rem;
+  gap: 75.008px;
   align-items: flex-start;
-  margin-top: 40px;
+  margin-top: 2.5rem;
 }
 
 .backfire-content-benefits-list-item {
   display: flex;
   align-items: center;
   width: 100%;
-  gap: 30px;
+  gap: 1.875rem;
 }
 
 .backfire-content-benefits-list-item-icon {
@@ -123,8 +112,8 @@
   background-image: url("../../assets/img/backfire/sight-frame.svg");
   background-repeat: no-repeat;
   background-size: contain;
-  height: 80px;
-  min-width: 80px;
+  height: 5rem;
+  min-width: 5rem;
 }
 
 .backfire-content-benefits-list-item-count {
@@ -158,16 +147,16 @@
 
 .backfire-content-benefits-list-item-text {
   font-size: var(--body-2-font-size);
-  margin-top: 7px;
+  margin-top: 0.4375rem;
 }
 
-@media screen and (min-width: 1280px) and (max-width: 1680px) {
+@media screen and (min-width: 80rem) and (max-width: 105rem) {
   .backfire-content {
     flex-direction: row;
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 64rem) {
   .backfire-content {
     flex-direction: column;
   }
@@ -175,7 +164,7 @@
   .backfire-content-examples {
     flex-direction: row;
     justify-content: space-between;
-    margin: 0 20px;
+    margin: 0 1.25rem;
   }
 
   .backfire-content-example {
@@ -187,14 +176,14 @@
   }
 
   .backfire-content-example-image {
-    max-width: 7rem;
-    max-height: auto;
+    width: 160px;
+    height: 160px;
   }
 
   .backfire-content-example-image-title {
-    margin-top: 10px;
+    margin-top: 0.625rem;
     text-align: center;
-    max-width: 140px;
+    max-width: 8.75rem;
     margin-left: 0;
   }
 
@@ -207,8 +196,8 @@
   }
 
   .backfire-content-example-image-wrapper {
-    width: 10rem;
-    height: 10rem;
+    width: 160px;
+    height: 160px;
     background-size: contain;
   }
 
@@ -221,8 +210,8 @@
   }
 
   .backfire-content-benefits-list-item-text {
-    font-size: 20px;
-    max-width: 559px;
+    font-size: 1.25rem;
+    max-width: 34.9375rem;
   }
 
   .backfire-content-benefits-banner-title {
@@ -230,13 +219,7 @@
   }
 }
 
-/* @media screen and (min-width: 768px) and (max-width: 1023px) {
-  .backfire-content {
-    flex-direction: column;
-  }
-} */
-
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .backfire-title {
     font-size: var(--h4-font-size);
   }
@@ -248,8 +231,13 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 41px;
-    margin: 0 20px;
+    gap: 2.5625rem;
+    margin: 0 1.25rem;
+  }
+
+  .backfire-content-example-image {
+    width: 188px;
+    height: 188px;
   }
 
   .backfire-content-example {
@@ -257,16 +245,16 @@
   }
 
   .backfire-content-example-image-title {
-    margin-top: 10px;
+    margin-top: 0.625rem;
     text-align: center;
     font-size: var(--body-2-font-size);
-    max-width: 140px;
+    max-width: 8.75rem;
     margin-left: 0;
   }
 
   .backfire-content-benefits-banner {
     width: 100%;
-    padding: 36px 10px 36px 10px;
+    padding: 2.25rem 0.625rem 2.25rem 0.625rem;
   }
 
   .backfire-content-benefits-banner-title {
@@ -282,7 +270,7 @@
   }
 
   .backfire-content-benefits-list-item-text {
-    font-size: 20px;
+    font-size: 1.25rem;
   }
 
   .backfire-content-benefits-banner-title {
@@ -292,8 +280,8 @@
 
 @media screen and (max-width: 420px) {
   .backfire-title {
-    font-size: 28px;
-    margin-bottom: 50px;
+    font-size: 1.75rem;
+    margin-bottom: 3.125rem;
   }
   .backfire-content {
     flex-direction: column;
@@ -307,9 +295,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 41px;
-    margin: 0 20px;
-    padding-bottom: 80px;
+    gap: 2.5625rem;
+    margin: 0 1.25rem;
+    padding-bottom: 5rem;
+  }
+
+  .backfire-content-example-image {
+    max-width: 11.75rem;
+    max-width: 11.75rem;
   }
 
   .backfire-content-example {
@@ -318,21 +311,21 @@
 
   .backfire-background-image {
     top: 80%;
-    width: 260px;
+    width: 16.25rem;
     height: auto;
   }
 
   .backfire-content-example-image-title {
-    margin-top: 10px;
+    margin-top: 0.625rem;
     text-align: left;
-    font-size: 20px;
-    max-width: 140px;
-    margin-left: 30px;
+    font-size: 1.25rem;
+    max-width: 8.75rem;
+    margin-left: 1.875rem;
   }
 
   .backfire-content-benefits-banner {
     width: 100%;
-    padding: 20px 10px 20px 10px;
+    padding: 1.25rem 0.625rem 1.25rem 0.625rem;
   }
 
   .backfire-content-benefits-banner-title {
@@ -345,16 +338,12 @@
   }
 
   .backfire-content-benefits {
-    padding-bottom: 80px;
+    padding-bottom: 5rem;
   }
 
   .backfire-content-benefits-list {
-    /* display: flex;
-    flex-direction: column;
-    gap: 4.688rem;
-    align-items: flex-start; */
-    margin-top: 40px;
-    gap: 2.5rem;
+    margin-top: 2.5rem;
+    gap: 40px;
   }
 
   .backfire-content-benefits-list-item-title {
@@ -362,14 +351,21 @@
   }
 
   .backfire-content-benefits-list-item-text {
-    font-size: 16px;
+    font-size: 1rem;
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 375px) {
+  .backfire-content-example-image {
+    width: 9.375rem;
+    height: 9.375rem;
+  }
+}
+
+@media screen and (max-width: 330px) {
   .backfire-title {
     font-size: var(--body-1-font-size);
-    margin-bottom: 30px;
+    margin-bottom: 1.875rem;
   }
   .backfire-content {
     flex-direction: column;
@@ -378,16 +374,16 @@
   .backfire-content-example-wrapper {
     margin: 0;
     width: auto;
-    height: 150px;
+    height: 9.375rem;
   }
 
   .backfire-content-examples {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px;
-    margin: 0 20px;
-    padding-bottom: 80px;
+    gap: 0.625rem;
+    margin: 0 1.25rem;
+    padding-bottom: 5rem;
   }
 
   .backfire-content-example {
@@ -398,36 +394,29 @@
 
   .backfire-background-image {
     top: 80%;
-    width: 260px;
+    width: 16.25rem;
     height: auto;
   }
 
-  .backfire-content-example-image-wrapper {
-    width: 130px;
-    height: 130px;
-    background-size: contain;
-  }
-
   .backfire-content-example-image {
-    width: 75px;
+    width: 8.125rem;
+    height: 8.125rem;
   }
 
   .backfire-content-example-image-title {
-    margin-top: 10px;
+    margin-top: 0.625rem;
     text-align: left;
-    font-size: 16px;
-    width: 100px;
-    /* max-width: 140px;
-    margin-left: 30px; */
+    font-size: 1rem;
+    width: 6.25rem;
   }
 
   .backfire-content-benefits-banner {
     width: 100%;
-    padding: 20px 10px 20px 10px;
+    padding: 1.25rem 0.625rem 1.25rem 0.625rem;
   }
 
   .backfire-content-benefits-banner-title {
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 130%;
   }
 
@@ -436,16 +425,12 @@
   }
 
   .backfire-content-benefits {
-    padding-bottom: 80px;
+    padding-bottom: 5rem;
   }
 
   .backfire-content-benefits-list {
-    /* display: flex;
-    flex-direction: column;
-    gap: 4.688rem;
-    align-items: flex-start; */
-    margin-top: 40px;
-    gap: 2.5rem;
+    margin-top: 2.5rem;
+    gap: 40px;
   }
 
   .backfire-content-benefits-list-item-title {
@@ -453,12 +438,12 @@
   }
 
   .backfire-content-benefits-list-item-text {
-    font-size: 14px;
+    font-size: 0.875rem;
   }
 
   .backfire-content-benefits-list-item-icon {
-    height: 50px;
-    min-width: 50px;
+    height: 3.125rem;
+    min-width: 3.125rem;
   }
 
   .backfire-content-benefits-list-item-count {
