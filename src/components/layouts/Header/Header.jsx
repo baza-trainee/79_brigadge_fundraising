@@ -14,14 +14,13 @@ const navLinks = [
 ];
 
 const Header = ({ links = navLinks }) => {
-  
   const [active, setActive] = useState();
   const scrollRef = useRef();
 
   const handleButtonClick = (sectionId) => {
-    const head = document.querySelector('header')
+    const head = document.querySelector("header");
     const element = document.getElementById(sectionId);
-    const h = head.offsetHeight
+    const h = head.offsetHeight;
     if (element) {
       scrollRef.current = element.offsetTop - h;
       window.scrollTo(0, scrollRef.current);
@@ -31,15 +30,15 @@ const Header = ({ links = navLinks }) => {
 
   useEffect(() => {
     const closeModal = (event) => {
-      if (event.code === 'Escape') {
-        setActive(false)
+      if (event.code === "Escape") {
+        setActive(false);
       }
-    }
-  
-    document.body.addEventListener('keyup', (event) => closeModal(event))
-  
+    };
+
+    document.body.addEventListener("keyup", (event) => closeModal(event));
+
     return () => {
-      window.removeEventListener('keyup', closeModal);
+      window.removeEventListener("keyup", closeModal);
     };
   }, []);
 
@@ -73,7 +72,12 @@ const Header = ({ links = navLinks }) => {
               ))}
             </ul>
           </nav>
-          <a className={styles.button_donat} href="#">
+          <a
+            className={styles.button_donat}
+            href="https://send.monobank.ua/jar/8rTfFfYs2K"
+            rel="noreferrer"
+            target="_blank"
+          >
             На Крила
           </a>
           <div
