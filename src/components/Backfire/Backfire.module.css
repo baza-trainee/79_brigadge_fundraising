@@ -150,13 +150,13 @@
   margin-top: 0.4375rem;
 }
 
-@media screen and (min-width: 80rem) and (max-width: 105rem) {
+@media (min-width: 1280px) and (max-width: 1680px) {
   .backfire-content {
     flex-direction: row;
   }
 }
 
-@media screen and (max-width: 64rem) {
+@media (min-width: 1024px) and (max-width: 1200px) {
   .backfire-content {
     flex-direction: column;
   }
@@ -219,7 +219,7 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1022px) {
   .backfire-title {
     font-size: var(--h4-font-size);
   }
@@ -278,7 +278,66 @@
   }
 }
 
-@media screen and (max-width: 420px) {
+@media (min-width: 540px) and (max-width: 767px) {
+  .backfire-title {
+    font-size: var(--h4-font-size);
+  }
+  .backfire-content {
+    flex-direction: column;
+  }
+
+  .backfire-content-examples {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2.5625rem;
+    margin: 0 1.25rem;
+  }
+
+  .backfire-content-example-image {
+    width: 188px;
+    height: 188px;
+  }
+
+  .backfire-content-example {
+    flex-direction: column;
+  }
+
+  .backfire-content-example-image-title {
+    margin-top: 0.625rem;
+    text-align: center;
+    font-size: var(--body-2-font-size);
+    max-width: 8.75rem;
+    margin-left: 0;
+  }
+
+  .backfire-content-benefits-banner {
+    width: 100%;
+    padding: 2.25rem 0.625rem 2.25rem 0.625rem;
+  }
+
+  .backfire-content-benefits-banner-title {
+    font-size: var(--h4-font-size);
+  }
+
+  .backfire-content-examples {
+    margin: 0;
+  }
+
+  .backfire-content-benefits-list-item-title {
+    font-size: var(--body-1-font-size);
+  }
+
+  .backfire-content-benefits-list-item-text {
+    font-size: 1.25rem;
+  }
+
+  .backfire-content-benefits-banner-title {
+    font-size: var(--h4-font-size);
+  }
+}
+
+@media (min-width: 420px) and (max-width: 540px) {
   .backfire-title {
     font-size: 1.75rem;
     margin-bottom: 3.125rem;
