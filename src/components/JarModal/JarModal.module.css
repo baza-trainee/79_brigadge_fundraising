@@ -20,7 +20,7 @@
   padding: 30px 20px 30px 20px;
   position: relative;
   min-height: 575px;
-  width: 100%;
+  width: 420px;
   background-color: var(--black);
   border: 1px solid rgba(0, 0, 0, 0);
   z-index: 1;
@@ -145,8 +145,40 @@
   border: none;
 }
 
-@media (min-width: 420px) {
+@media (max-width: 1024px) {
   .modal-content {
     width: 420px;
+  }
+}
+
+@media (max-width: 768px) {
+  .modal-content {
+    width: 320px;
+  }
+}
+
+@media (max-width: 420px) {
+  .modal-content {
+    width: 320px;
+  }
+}
+
+@media (max-width: 320px) {
+  .modal-content {
+    width: 280px;
+    height: 100%;
+  }
+
+  .goal-text {
+    font-size: var(--body-2-font-size);
+  }
+
+  .modal-btn {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+
+  .modal-btn-down {
+    font-size: 16px;
   }
 }
