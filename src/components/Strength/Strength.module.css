@@ -39,18 +39,17 @@
 
 .strength-share-btn {
 
-    color: var(--button-dark-default);
-    background-color: var(--white);
-    font-family: var(--bold-font-family);
-    font-size: var(--h4-font-size);
-    line-height: var(--h4-line-height);
-    font-weight: 400;
-    border: none;
-    max-height: 100px;
-    padding: 28.5px 96px;
-    text-align: end;
-    transition: all 0.3s ease;
-
+  color: var(--button-dark-default);
+  background-color: var(--white);
+  font-family: var(--bold-font-family);
+  font-size: var(--h4-font-size);
+  line-height: var(--h4-line-height);
+  font-weight: 400;
+  border: none;
+  max-height: 100px;
+  padding: 28.5px 96px;
+  text-align: end;
+  transition: all 0.3s ease;
 }
 
 .strength-share-btn:hover {
@@ -83,6 +82,7 @@
 
   .strength-img {
     transform: rotate(90deg);
+    width: 200px;
     margin: 50px 0;
   }
 }
@@ -103,7 +103,6 @@
   }
 
   .strength-img {
-    height: 100px;
     margin: 50px 0;
   }
 
@@ -113,7 +112,7 @@
   }
 
   .strength-title {
-    font-size: 30px;
+    font-size: 32px;
     line-height: 1;
   }
 }
