@@ -1,6 +1,8 @@
 .modal {
   height: 100vh;
   width: 100vw;
+  max-height: 100%;
+  overflow: auto;
   background-color: rgba(0, 0, 0, 0.4);
   position: fixed;
   display: flex;
@@ -233,7 +235,7 @@
   }
 }
 
-@media screen and (max-width: 320px) {
+@media (min-width: 320px) and (max-width: 375px) {
   .modal-content {
     width: 280px;
     height: 433px;
