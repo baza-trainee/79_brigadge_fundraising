@@ -6,66 +6,11 @@ import ship from '../../assets/img/jar_modal/war_ship.svg'
 import fire from '../../assets/img/jar_modal/Fire.svg'
 
 import styles from './JarModal.module.css'
+import axios from 'axios'
 
+const rawJarInfo = await axios.get("/api/jar_details");
 const JarModal = ({isVisible, setIsVisible, activeModal, setActiveModal}) => {
-  const data = {
-    "fundraisingGoal":500,
-    "totalDonations":105,
-    "recentDonations":[
-       {
-          "donor":"53************89",
-          "donationAmount":150.0,
-          "donationDate": "15-05-2023"
-       },
-       {
-          "donor":"Donor3",
-          "donationAmount":600.0,
-          "donationDate": "15-05-2023"
-       },
-       {
-          "donor":"Donor4",
-          "donationAmount":500.0,
-          "donationDate": "15-05-2023"
-       },
-       {
-          "donor":"Donor5",
-          "donationAmount":400.0,
-          "donationDate": "15-05-2023"
-       },
-       {
-        "donor":"53************89",
-        "donationAmount":150.0,
-        "donationDate": "15-05-2023"
-     },
-    ],
-    "largestDonations":[
-       {
-          "donor":"Donor1",
-          "donationAmount":1000.0,
-          "donationDate": "15-05-2023"
-       },
-       {
-          "donor":"Donor2",
-          "donationAmount":750.0,
-          "donationDate": "15-05-2023"
-       },
-       {
-          "donor":"Donor3",
-          "donationAmount":600.0,
-          "donationDate": "15-05-2023"
-       },
-       {
-          "donor":"Donor4",
-          "donationAmount":500.0,
-          "donationDate": "15-05-2023"
-       },
-       {
-          "donor":"Donor5",
-          "donationAmount":400.0,
-          "donationDate": "15-05-2023"
-       }
-    ]
- };
+  const data = rawJarInfo.data;
 
  useEffect(() => {
   const closeModal = (event) => {
