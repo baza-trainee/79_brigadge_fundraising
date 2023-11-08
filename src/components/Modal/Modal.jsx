@@ -24,22 +24,41 @@ const Modal = ({ active, setActive }) => {
         <div className={styles["modal-wrapper"]}>
           <p className={styles["modal-title"]}>Поділитись</p>
           <div className={styles["modal-btn-wrapper"]}>
-            <button className={`${styles["modal-btn"]} ${styles["facebook"]}`}>
+            <a
+              href="https://www.facebook.com/sharer.php?u=http%3A%2F%2F79-wings.site%2F"
+              target="_blank"
+              rel="noreferrer"
+              className={`${styles["modal-btn"]} ${styles["facebook"]}`}
+            >
               <img className={styles["icon"]} src={facebook} alt=""></img>
               Facebook
-            </button>
-            <button className={`${styles["modal-btn"]} ${styles["telegram"]}`}>
+            </a>
+            <a
+              href="https://telegram.me/share/url?url=79-wings.site&text=Окриляй%20злих%20птахів,%20знищуй%20ворогів.%20"
+              target="_blank"
+              rel="noreferrer"
+              className={`${styles["modal-btn"]} ${styles["telegram"]}`}
+            >
               <img className={styles["icon"]} src={telegram} alt=""></img>
               Telegram
-            </button>
-            <button className={`${styles["modal-btn"]} ${styles["viber"]}`}>
+            </a>
+            <a
+              href="viber://forward?text=Окриляй%20злих%20птахів,%20знищуй%20ворогів.%2079-wings.site"
+              rel="noreferrer"
+              className={`${styles["modal-btn"]} ${styles["viber"]}`}
+            >
               <img className={styles["icon"]} src={viber} alt=""></img>
               Viber
-            </button>
-            <button className={`${styles["modal-btn"]} ${styles["linkedin"]}`}>
+            </a>
+            <a
+              href="https://www.linkedin.com/sharing/share-offsite/?url=79-wings.site"
+              target="_blank"
+              rel="noreferrer"
+              className={`${styles["modal-btn"]} ${styles["linkedin"]}`}
+            >
               <img className={styles["icon"]} src={linkedin} alt=""></img>
               LinkedIn
-            </button>
+            </a>
           </div>
         </div>
         <button
