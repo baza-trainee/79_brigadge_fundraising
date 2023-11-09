@@ -147,7 +147,7 @@ const JarModal = ({ isVisible, setIsVisible, activeModal, setActiveModal }) => {
         </button> */}
         <a
           className={styles["modal-btn-down"]}
-          href="https://send.monobank.ua/jar/8rTfFfYs2K"
+          href="https://send.monobank.ua/jar/4jhbEszhq6"
           rel="noreferrer"
           target="_blank"
         >
