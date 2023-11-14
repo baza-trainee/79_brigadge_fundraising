@@ -18,10 +18,17 @@ const UkrainianWings = () => {
             Окриляй злих птахів, знищуй ворогів
           </h5>
           <p className={styles["ukrainian-wings-desc"]}>
-            Наша мета зібрати <span className={styles["big_screen"]}>250 000 гривень</span><span className={styles["small_screen"]}>250 000 грн</span> для 79 бригади ЗСУ
-            на фінансування проєкту <span>Бекфаєр</span>
+            Наша мета зібрати{" "}
+            <span className={styles["big_screen"]}>250 000 гривень</span>
+            <span className={styles["small_screen"]}>250 000 грн</span> для 79
+            бригади ЗСУ на фінансування проету <span>Бекфаєр</span>
           </p>
-          <a className={styles["ukrainian-wings-btn"]} href="/#">
+          <a
+            className={styles["ukrainian-wings-btn"]}
+            href="https://send.monobank.ua/jar/8rTfFfYs2K"
+            rel="noreferrer"
+            target="_blank"
+          >
             На крила
           </a>
         </div>
