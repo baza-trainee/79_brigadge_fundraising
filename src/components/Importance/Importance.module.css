@@ -16,8 +16,8 @@
 }
 
 .importance__img::after {
-  content: '';
-  background-image: url('../../assets/img/importance/border-desktop.png');
+  content: "";
+  background-image: url("../../assets/img/importance/border-desktop.png");
   position: absolute;
   top: 0;
   left: 0;
@@ -139,7 +139,7 @@
   }
 
   .importance__text {
-    width: 70%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     font-size: 24px;
