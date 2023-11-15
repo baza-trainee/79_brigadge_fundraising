@@ -81,6 +81,7 @@
 
   .strength-img {
     transform: rotate(90deg);
+    width: 200px;
     margin: 50px 0;
   }
 }
@@ -101,7 +102,6 @@
   }
 
   .strength-img {
-    height: 100px;
     margin: 50px 0;
   }
 
@@ -111,7 +111,7 @@
   }
 
   .strength-title {
-    font-size: 30px;
+    font-size: 32px;
     line-height: 1;
   }
 }
