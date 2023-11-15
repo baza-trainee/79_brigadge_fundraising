@@ -38,7 +38,6 @@
 }
 
 .strength-share-btn {
-
   color: var(--button-dark-default);
   background-color: var(--white);
   font-family: var(--bold-font-family);
@@ -114,5 +113,49 @@
   .strength-title {
     font-size: 32px;
     line-height: 1;
+  }
+}
+
+@media (max-width: 480px) {
+  .strength-title {
+    font-size: 32px;
+  }
+
+  .strength-text,
+  .strength-text-span {
+    font-size: 24px;
+  }
+
+  .strength-share-btn {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 320px) {
+  .strength {
+    padding-top: 50px;
+  }
+  .strength-title {
+    font-size: 24px;
+    line-height: 1;
+  }
+
+  .strength-text,
+  .strength-text-span {
+    font-size: 18px;
+    line-height: 23.4px;
+  }
+
+  .strength-content-wrapper {
+    margin-top: 30px;
+  }
+
+  .strength-share-btn {
+    font-size: 32px;
+  }
+
+  .strength-img {
+    width: 200px;
+    height: 130px;
   }
 }
