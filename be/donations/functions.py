@@ -9,7 +9,7 @@ import pdb
 def get_data_from_api():
     print(111111111111)
     now = int(datetime.now().timestamp())
-    last_date = now - 2682000
+    last_date = now - 2678400
 
     headers = {
         "X-Token": settings.MONOBANK_API_KEY
@@ -27,6 +27,11 @@ def get_data_from_api():
 
     if response.status_code == 200:
         data = response.json()
+
+        # Update the balance field
+        jar.current_amount = data[0]["balance"] * 0.01
+        jar.save()
+
         all_donates = []
         pattern = r'^Від: \w+\s\w+'
         for donate in data:

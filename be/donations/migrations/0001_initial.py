@@ -2,7 +2,7 @@
 
 from django.db import migrations, models
 import django.db.models.deletion
-
+import os
 
 class Migration(migrations.Migration):
 
@@ -15,8 +15,8 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='Jar',
             fields=[
-                ('jar_id', models.CharField(max_length=100, primary_key=True, serialize=False)),
-                ('target_amount', models.IntegerField(default=0)),
+                ('jar_id', models.CharField(max_length=100, primary_key=True, serialize=False, default=os.environ['JAR'])),
+                ('target_amount', models.IntegerField(default=50000)),
                 ('current_amount', models.IntegerField(default=0)),
             ],
         ),

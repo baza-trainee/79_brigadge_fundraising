@@ -55,8 +55,8 @@
     position: absolute;
     text-transform: uppercase;
     padding: 0 10px;
-    font-size: 48px;
-    line-height: 67px;
+    font-size: 40px;
+    line-height: 1.2;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -101,7 +101,7 @@
     }
 
     .wings-block1-text {
-        font-size: 32px;
+        font-size: 27px;
         line-height: 1.2;
     }
 }
@@ -142,7 +142,7 @@
 
 @media (max-width: 480px) {
     .wings-title {
-        font-size: 35px;
+        font-size: 28px;
     }
 
     .wings-content-wrapper {
@@ -154,7 +154,7 @@
     }
 
     .wings-text {
-        font-size: 20px;
+        font-size: 24px;
         text-align: center;
     }
 
