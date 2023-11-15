@@ -3,11 +3,8 @@ from datetime import datetime
 import re
 from .models import Donation, Jar, RecentDonation
 from django.conf import settings
-import pdb
-
 
 def get_data_from_api():
-    print(111111111111)
     now = int(datetime.now().timestamp())
     last_date = now - 2678400
 
