@@ -51,7 +51,7 @@ const Modal = ({ active, setActive }) => {
               Viber
             </a>
             <a
-              href="https://www.linkedin.com/sharing/share-offsite/?url=79-wings.site"
+              href="https://www.linkedin.com/sharing/share-offsite/?url=http://79-wings.site/"
               target="_blank"
               rel="noreferrer"
               className={`${styles["modal-btn"]} ${styles["linkedin"]}`}

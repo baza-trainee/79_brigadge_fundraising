@@ -28,8 +28,8 @@
   width: 208px;
 }
 .progressBar__img_wrapper::after {
-  content: '';
-  background-image: url('../../assets/img/progress-bar/explosion.gif');
+  content: "";
+  background-image: url("../../assets/img/progress-bar/explosion.gif");
   position: absolute;
   top: -87px;
   left: 63px;
@@ -104,7 +104,7 @@
 }
 
 .progressBar__scale_plane {
-  content: '';
+  content: "";
   position: absolute;
   height: 45px;
   width: 45px;
@@ -294,6 +294,12 @@
     height: 50px;
     width: 60px;
     top: -87px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .progressBar__title {
+    font-size: 48px;
   }
 }
 

@@ -37,7 +37,7 @@
   padding: 20px 0px;
   width: 100%;
   right: -100%;
-  transition: right .5s;
+  transition: right 0.5s;
 }
 
 .nav_list {
@@ -182,6 +182,32 @@
 
   .nav_href {
     font-size: 20px;
+  }
+
+  .logo_wrapper {
+    height: 40px;
+    width: 80px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .button_donat {
+    padding: 10px 40px;
+    font-size: 20px;
+    line-height: 100%;
+  }
+
+  .nav_list {
+    gap: 30px;
+  }
+
+  .nav_href {
+    font-size: 20px;
+  }
+
+  .logo_wrapper {
+    height: 60px;
+    width: 120px;
   }
 }
 

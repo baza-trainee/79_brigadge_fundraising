@@ -129,6 +129,11 @@
   .strength-share-btn {
     font-size: 32px;
   }
+
+  .strength-img {
+    width: 206px;
+    height: 132px;
+  }
 }
 
 @media (max-width: 320px) {
@@ -155,7 +160,7 @@
   }
 
   .strength-img {
-    width: 200px;
-    height: 130px;
+    width: 206px;
+    height: 132px;
   }
 }
