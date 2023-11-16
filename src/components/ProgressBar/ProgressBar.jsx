@@ -1,19 +1,18 @@
-import JarDetailsButton from '../JarDetailsButton/JarDetailsButton';
-import Container from '../layouts/Container/Container';
-import styles from './ProgressBar.module.css';
-import boat from '../../assets/img/progress-bar/boat.svg';
+import JarDetailsButton from "../JarDetailsButton/JarDetailsButton";
+import Container from "../layouts/Container/Container";
+import styles from "./ProgressBar.module.css";
+import boat from "../../assets/img/progress-bar/boat.svg";
 
-import React, { useEffect, useState } from 'react';
-import axios from 'axios'
-
-const rawJarInfo = await axios.get("/api/jar_details");
-const jarInfo = rawJarInfo.data;
+import React, { useEffect, useState } from "react";
+import useGetJarDetails from "../../api/useGetJarDetails";
 
 const ProgressBar = ({ openModal }) => {
   const [lengthScale, setLengthScale] = useState(0);
+  const { data } = useGetJarDetails();
+  const { fundraisingGoal, totalDonations } = data;
 
-  const totalAmount = jarInfo.fundraisingGoal;
-  const completedAmount = jarInfo.totalDonations;
+  const totalAmount = fundraisingGoal;
+  const completedAmount = totalDonations;
   const completionPercentage = Math.floor(
     (completedAmount / totalAmount) * 100
   );
@@ -21,10 +20,10 @@ const ProgressBar = ({ openModal }) => {
   useEffect(() => {
     fixedScaleLenght();
 
-    window.addEventListener('resize', fixedScaleLenght);
+    window.addEventListener("resize", fixedScaleLenght);
 
     return () => {
-      window.removeEventListener('resize', fixedScaleLenght);
+      window.removeEventListener("resize", fixedScaleLenght);
     };
   }, []);
 
@@ -47,7 +46,7 @@ const ProgressBar = ({ openModal }) => {
   }
 
   function formatedAmount(amount) {
-    return amount.toLocaleString('uk-UA');
+    return amount?.toLocaleString("uk-UA");
   }
 
   return (
@@ -75,7 +74,7 @@ const ProgressBar = ({ openModal }) => {
                   className={`${styles.progress_segment} ${
                     index < (completionPercentage * lengthScale) / 100
                       ? `${styles.completed}`
-                      : ''
+                      : ""
                   }`}
                 />
               ))}
@@ -97,12 +96,12 @@ const ProgressBar = ({ openModal }) => {
         </div>
         <ul className={styles.progressBar__btn_list}>
           <li>
-            <JarDetailsButton modal={() => openModal('recent')}>
+            <JarDetailsButton modal={() => openModal("recent")}>
               Останній донат
             </JarDetailsButton>
           </li>
           <li>
-            <JarDetailsButton modal={() => openModal('largest')}>
+            <JarDetailsButton modal={() => openModal("largest")}>
               Найбільший донат
             </JarDetailsButton>
           </li>
