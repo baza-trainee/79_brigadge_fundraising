@@ -20,13 +20,20 @@ const Wings = () => {
               <div className={styles["wings-block2-content"]}>
                 <img src={cotton} alt="cotton" />
                 <button className={styles["wings-block2-button"]}>
-                  <a href="#">Донат на крила</a>
+                  <a
+                    href="https://send.monobank.ua/jar/4jhbEszhq6"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    Донат на крила
+                  </a>
                 </button>
               </div>
             </div>
           </div>
           <p className={styles["wings-text"]}>
-            Жодний з <span className={styles["span-text"]}>БпЛА “Бекфаєр”</span> за рік роботи не був втрачений у бойових діях. Невидимі і недосяжні
+            Жодний з <span className={styles["span-text"]}>БпЛА “Бекфаєр”</span>{" "}
+            за рік роботи не був втрачений у бойових діях. Невидимі і недосяжні
             для ворога.
           </p>
         </div>

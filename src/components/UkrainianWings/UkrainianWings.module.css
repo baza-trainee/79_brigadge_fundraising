@@ -9,7 +9,7 @@
 }
 
 .ukrainian-wings-wrapper {
-  background-image: url('../../assets/img/ukrainian-wings/bg-ukrainian-wings_420.svg');
+  background-image: url("../../assets/img/ukrainian-wings/bg-ukrainian-wings_420.svg");
   position: absolute;
   width: calc(100% - 40px);
   height: 169px;
@@ -153,6 +153,7 @@
     width: 155%;
     margin-top: 43px;
     margin-bottom: 40px;
+    font-size: 18px;
   }
 
   .ukrainian-wings-btn {
@@ -163,7 +164,6 @@
     width: 380px;
     transform: translateX(-20px);
   }
-
 }
 
 @media (min-width: 500px) {
@@ -222,7 +222,7 @@
   }
 
   .ukrainian-wings-wrapper {
-    background-image: url('../../assets/img/ukrainian-wings/bg-ukrainian-wings.svg');
+    background-image: url("../../assets/img/ukrainian-wings/bg-ukrainian-wings.svg");
     height: calc(100% - 80px);
   }
 
@@ -309,7 +309,6 @@
 }
 
 @media (min-width: 1200px) {
-
   .ukrainian-wings-title {
     font-size: 60px;
     line-height: 130%;
