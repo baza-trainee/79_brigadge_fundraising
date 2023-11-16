@@ -269,6 +269,20 @@
   }
 }
 
+@media screen and (min-width: 1280px) {
+  .importance__title {
+    font-size: 48px;
+  }
+
+  .importance__info_text {
+    font-size: 24px;
+  }
+
+  .importance__text {
+    font-size: 40px;
+  }
+}
+
 @media screen and (min-width: 1680px) {
   .importance {
     padding-bottom: 150px;

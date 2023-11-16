@@ -157,6 +157,9 @@
 }
 
 @media (min-width: 1024px) and (max-width: 1200px) {
+  .backfire-title {
+    font-size: 36px;
+  }
   .backfire-content {
     flex-direction: column;
   }
@@ -422,7 +425,7 @@
   }
 
   .backfire-title {
-    font-size: var(--body-1-font-size);
+    font-size: 1.75rem;
     margin-bottom: 1.875rem;
   }
   .backfire-content {
@@ -432,7 +435,7 @@
   .backfire-content-example-wrapper {
     margin: 0;
     width: auto;
-    height: 9.375rem;
+    height: auto;
   }
 
   .backfire-content-examples {
@@ -457,15 +460,16 @@
   }
 
   .backfire-content-example-image {
-    width: 8.125rem;
-    height: 8.125rem;
+    width: 11.75rem;
+    height: 11.75rem;
+    margin-bottom: 20px;
   }
 
   .backfire-content-example-image-title {
     margin-top: 0.625rem;
     text-align: left;
-    font-size: 1rem;
-    width: 6.25rem;
+    font-size: 1.25rem;
+    width: 100%;
   }
 
   .backfire-content-benefits-banner {
@@ -474,7 +478,7 @@
   }
 
   .backfire-content-benefits-banner-title {
-    font-size: 1rem;
+    font-size: 1.5rem;
     line-height: 130%;
   }
 
@@ -500,8 +504,8 @@
   }
 
   .backfire-content-benefits-list-item-icon {
-    height: 3.125rem;
-    min-width: 3.125rem;
+    height: 5rem;
+    min-width: 5rem;
   }
 
   .backfire-content-benefits-list-item-count {
