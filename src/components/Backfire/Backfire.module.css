@@ -389,7 +389,7 @@
 
   .backfire-content-benefits-banner-title {
     font-size: var(--body-1-font-size);
-    line-height: 130%;
+    line-height: 1.95rem;
   }
 
   .backfire-content-examples {
@@ -411,6 +411,7 @@
 
   .backfire-content-benefits-list-item-text {
     font-size: 1rem;
+    line-height: 1.3rem;
   }
 }
 
@@ -660,7 +661,7 @@
   }
 
   .backfire-content-benefits {
-    padding-bottom: 5rem;
+    padding-bottom: 3.3125rem;
   }
 
   .backfire-content-benefits-list {
@@ -670,10 +671,12 @@
 
   .backfire-content-benefits-list-item-title {
     font-size: var(--body-2-font-size);
+    line-height: 1.6875rem;
   }
 
   .backfire-content-benefits-list-item-text {
     font-size: 0.875rem;
+    line-height: 1.225rem;
   }
 
   .backfire-content-benefits-list-item-icon {

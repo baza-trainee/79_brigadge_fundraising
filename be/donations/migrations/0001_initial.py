@@ -3,7 +3,6 @@
 from django.db import migrations, models
 import django.db.models.deletion
 
-
 class Migration(migrations.Migration):
 
     initial = True
@@ -16,7 +15,7 @@ class Migration(migrations.Migration):
             name='Jar',
             fields=[
                 ('jar_id', models.CharField(max_length=100, primary_key=True, serialize=False)),
-                ('target_amount', models.IntegerField(default=0)),
+                ('target_amount', models.IntegerField(default=50000)),
                 ('current_amount', models.IntegerField(default=0)),
             ],
         ),

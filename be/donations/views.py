@@ -1,6 +1,11 @@
 from django.http import JsonResponse
 from .functions import get_data_from_api, get_db_data
+from .models import Jar
 
+def initialize_jar(request):
+    if not Jar.objects.exists():
+        jar = Jar()
+        jar.save()
 
 def get_jar_details(request):
     """ Gets Jar details and updates database"""
@@ -20,7 +25,3 @@ def get_jar_details(request):
                        }
 
         return JsonResponse(parsed_data)
-
-
-
-

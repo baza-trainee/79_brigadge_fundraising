@@ -1,9 +1,9 @@
 from django.db import models
-
+import os
 
 class Jar(models.Model):
-    jar_id = models.CharField(primary_key=True, max_length=100)
-    target_amount = models.IntegerField(default=0)
+    jar_id = models.CharField(primary_key=True, max_length=100, default=os.environ['JAR'])
+    target_amount = models.IntegerField(default=50000)
     current_amount = models.IntegerField(default=0)
 
     objects = models.Manager()

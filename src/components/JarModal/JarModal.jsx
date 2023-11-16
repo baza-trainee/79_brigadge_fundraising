@@ -83,12 +83,24 @@ const JarModal = ({ isVisible, setIsVisible, activeModal, setActiveModal }) => {
             </p>
           </>
         )}
-        <button
-          className={styles["modal-btn-down"]}
-          onClick={() => setIsVisible(false)}
+        {/* <button
+            className={styles['modal-btn-down']}
+            onClick={() => setIsVisible(false)}
         >
-          На головну
-        </button>
+          На головну      
+        </button> */}
+        <a
+          className={styles["modal-btn-down"]}
+          href="https://send.monobank.ua/jar/4jhbEszhq6"
+          rel="noreferrer"
+          target="_blank"
+        >
+          На крила
+        </a>
+        <button
+          className={styles["modal-btn-close"]}
+          onClick={() => setIsVisible(false)}
+        ></button>
       </div>
     </div>
   );

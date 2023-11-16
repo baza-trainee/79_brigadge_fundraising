@@ -1,164 +1,178 @@
 .wings {
-    background-color: var(--black);
-    position: relative;
+  background-color: var(--black);
+  position: relative;
 }
 
 .wings-wrapper {
-    color: var(--white);
-    font-family: var(--bold-font-family);
+  color: var(--white);
+  font-family: var(--bold-font-family);
 }
 
 .wings-title {
-    color: var(--white);
-    font-family: var(--bold-font-family);
-    font-size: var(--h2-font-size);
-    line-height: var(--h2-line-height);
-    font-weight: 400;
+  color: var(--white);
+  font-family: var(--bold-font-family);
+  font-size: var(--h2-font-size);
+  line-height: var(--h2-line-height);
+  font-weight: 400;
 }
 
 .wings-content-wrapper {
-    display: flex;
-    justify-content: space-between;
-    margin: 100px 0;
-    gap: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin: 100px 0;
+  gap: 20px;
 }
 
 .wings-text {
-    font-size: 40px;
-    line-height: 48px;
-    font-weight: 400;
-    max-width: 1060px;
-    text-align: start;
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 400;
+  max-width: 1060px;
+  text-align: start;
 }
 
 .span-text {
-    color: var(--main-green);
+  color: var(--main-green);
 }
 
 .wings-block1 {
-    position: relative;
-    flex: 1 1 40%;
-    background-image: url('../../assets/img/wings/wings-vector_1.svg');
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+  position: relative;
+  flex: 1 1 40%;
+  background-image: url("../../assets/img/wings/wings-vector_1.svg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 
 .wings-block2 {
-    position: relative;
-    flex: 1 1 57%;
-    background-image: url('../../assets/img/wings/airfield.png');
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+  position: relative;
+  flex: 1 1 57%;
+  background-image: url("../../assets/img/wings/airfield.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 
 .wings-block1-text {
-    position: absolute;
-    text-transform: uppercase;
-    padding: 0 10px;
-    font-size: 48px;
-    line-height: 67px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  text-transform: uppercase;
+  padding: 0 10px;
+  font-size: 48px;
+  line-height: 67px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .wings-block2-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .wings-block2-content img {
-    margin-top: -130px;
+  margin-top: -130px;
 }
 
 .wings-block2-button {
-    font-size: 36px;
-    margin: 0 0 40px;
-    padding: 30px 60px;
-    border: none;
-    border-radius: unset;
+  font-size: 36px;
+  margin: 0 0 40px;
+  padding: 30px 60px;
+  border: none;
+  border-radius: unset;
 }
 
 .wings-block2-button a {
-    transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .wings-block2-button:hover a {
-    color: var(--black);
+  color: var(--black);
 }
 
 .wings-block2-button a {
-    text-decoration: none;
-    font-family: var(--bold-font-family);
-    color: var(--button-dark-default);
+  text-decoration: none;
+  font-family: var(--bold-font-family);
+  color: var(--button-dark-default);
 }
 
 @media (max-width: 1280px) {
-    .wings-block2-content img {
-        margin-top: -200px;
-    }
+  .wings-block2-content img {
+    margin-top: -200px;
+  }
 
-    .wings-block1-text {
-        font-size: 32px;
-        line-height: 1.2;
-    }
+  .wings-block1-text {
+    font-size: 27px;
+    line-height: 1.2;
+  }
 }
 
 @media (max-width: 1024px) {
+  .wings-block2-button {
+    font-size: 25px;
+    margin: 0 0 30px;
+    padding: 15px 30px;
+  }
 
-    .wings-block2-button {
-        font-size: 25px;
-        margin: 0 0 30px;
-        padding: 15px 30px;
-    }
-
-    .wings-content-wrapper {
-        margin: 80px 0;
-    }
+  .wings-content-wrapper {
+    margin: 80px 0;
+  }
 }
 
 @media (max-width: 768px) {
-    .wings-content-wrapper {
-        flex-direction: column;
-        margin: 60px 0;
-    }
+  .wings-content-wrapper {
+    flex-direction: column;
+    margin: 60px 0;
+  }
 
-    .wings-block2 {
-        margin: 0 auto;
-        max-width: 500px;
-    }
+  .wings-block2 {
+    margin: 0 auto;
+    max-width: 500px;
+  }
 
-    .wings-block1 {
-        min-height: 340px;
-    }
+  .wings-block1 {
+    min-height: 340px;
+  }
 
-    .wings-text {
-        font-size: 30px;
-        line-height: 1.2;
-    }
+  .wings-text {
+    font-size: 30px;
+    line-height: 1.2;
+  }
 }
 
 @media (max-width: 480px) {
-    .wings-title {
-        font-size: 35px;
-    }
+  .wings-title {
+    font-size: 28px;
+  }
 
-    .wings-content-wrapper {
-        margin: 40px 0;
-    }
+  .wings-content-wrapper {
+    margin: 40px 0;
+  }
 
-    .wings-block2-content img {
-        margin-top: -150px;
-    }
+  .wings-block2-content img {
+    margin-top: -150px;
+  }
 
-    .wings-text {
-        font-size: 20px;
-        text-align: center;
-    }
+  .wings-text {
+    font-size: 24px;
+    text-align: center;
+  }
 
-    .wings-block2-button {
-        font-size: 20px;
-    }
+  .wings-block2-button {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 320px) {
+  .wings-title {
+    font-size: 24px;
+  }
+
+  .wings-content-wrapper {
+    margin: 0;
+  }
+
+  .wings-text {
+    font-size: 18px;
+    margin-top: 30px;
+  }
 }

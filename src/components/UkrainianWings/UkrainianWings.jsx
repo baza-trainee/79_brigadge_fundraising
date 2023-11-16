@@ -25,7 +25,7 @@ const UkrainianWings = () => {
           </p>
           <a
             className={styles["ukrainian-wings-btn"]}
-            href="https://send.monobank.ua/jar/8rTfFfYs2K"
+            href="https://send.monobank.ua/jar/4jhbEszhq6"
             rel="noreferrer"
             target="_blank"
           >
@@ -36,11 +36,7 @@ const UkrainianWings = () => {
           className={`${styles["ukrainian-wings-block"]} ${styles["ukrainian-wings-right-block"]}`}
         >
           <div className={styles["wrapper-img"]}>
-            <img
-              src={Plane}
-              alt="Plane"
-              className={styles["ukrainian-wings-plane"]}
-            />
+            <img src={Plane} alt="Plane" className={styles["ukrainian-wings-plane"]} />
           </div>
         </div>
       </Container>
