@@ -17,8 +17,8 @@ const UkrainianWings = () => {
           </h5>
           <p className={styles["ukrainian-wings-desc"]}>
             Наша мета зібрати{" "}
-            <span className={styles["big_screen"]}>250 000 гривень</span>
-            <span className={styles["small_screen"]}>250 000 грн</span> для 79
+            <span className={styles["big_screen"]}>50 000 гривень</span>
+            <span className={styles["small_screen"]}>50 000 грн</span> для 79
             бригади ЗСУ на фінансування проєкту <span>Бекфаєр</span>
           </p>
           <a

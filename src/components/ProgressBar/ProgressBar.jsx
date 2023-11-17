@@ -16,7 +16,7 @@ const ProgressBar = ({ openModal }) => {
   const completionPercentage = Math.floor(
     (completedAmount / totalAmount) * 100
   );
-  const restPersentage = 100 - completionPercentage;
+  // const restPersentage = 100 - completionPercentage;
   useEffect(() => {
     fixedScaleLenght();
 
@@ -46,7 +46,7 @@ const ProgressBar = ({ openModal }) => {
   }
 
   function formatedAmount(amount) {
-    return amount?.toLocaleString("uk-UA");
+    return amount.toLocaleString("uk-UA");
   }
 
   return (
@@ -57,7 +57,7 @@ const ProgressBar = ({ openModal }) => {
           <div className={styles.progressBar__scale_wrapper}>
             <div
               className={styles.progressBar__scale_plane}
-              style={{ right: `${restPersentage}%` }}
+              style={{ left: `${completionPercentage}%` }}
             ></div>
 
             <p
