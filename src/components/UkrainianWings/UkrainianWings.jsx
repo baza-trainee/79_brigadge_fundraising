@@ -11,9 +11,7 @@ const UkrainianWings = () => {
         <div
           className={`${styles["ukrainian-wings-block"]} ${styles["ukrainian-wings-left-block"]}`}
         >
-          <h1 className={styles["ukrainian-wings-title"]}>
-            "Українські Крила"
-          </h1>
+          <h1 className={styles["ukrainian-wings-title"]}>Українські Крила</h1>
           <h5 className={styles["ukrainian-wings-subtitle"]}>
             Окриляй злих птахів, знищуй ворогів
           </h5>
@@ -21,7 +19,7 @@ const UkrainianWings = () => {
             Наша мета зібрати{" "}
             <span className={styles["big_screen"]}>250 000 гривень</span>
             <span className={styles["small_screen"]}>250 000 грн</span> для 79
-            бригади ЗСУ на фінансування проету <span>Бекфаєр</span>
+            бригади ЗСУ на фінансування проєкту <span>Бекфаєр</span>
           </p>
           <a
             className={styles["ukrainian-wings-btn"]}
@@ -36,7 +34,11 @@ const UkrainianWings = () => {
           className={`${styles["ukrainian-wings-block"]} ${styles["ukrainian-wings-right-block"]}`}
         >
           <div className={styles["wrapper-img"]}>
-            <img src={Plane} alt="Plane" className={styles["ukrainian-wings-plane"]} />
+            <img
+              src={Plane}
+              alt="Plane"
+              className={styles["ukrainian-wings-plane"]}
+            />
           </div>
         </div>
       </Container>
