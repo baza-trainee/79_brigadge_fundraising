@@ -60,6 +60,18 @@
   background-color: var(--button-light-pressing);
 }
 
+@media (max-width: 1024px) {
+  .strength-text,
+  .strength-text-span {
+    font-size: 28px;
+    line-height: 35.6px;
+  }
+
+  .strength-img {
+    height: 129px;
+  }
+}
+
 @media (max-width: 992px) {
   .strength {
     padding-top: 80px;

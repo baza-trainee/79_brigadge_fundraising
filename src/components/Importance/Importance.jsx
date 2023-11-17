@@ -1,5 +1,5 @@
-import Container from '../layouts/Container/Container';
-import styles from './Importance.module.css';
+import Container from "../layouts/Container/Container";
+import styles from "./Importance.module.css";
 
 import {
   img1,
@@ -10,7 +10,7 @@ import {
   img3x2,
   img4,
   img4x2,
-} from '../../assets/img/importance';
+} from "../../assets/img/importance";
 
 const Importance = () => {
   return (
@@ -37,8 +37,8 @@ const Importance = () => {
 
             <div className={styles.importance__info}>
               <p className={styles.importance__info_text}>
-                {' '}
-                Зниження ризиків для бійців на передовій.
+                {" "}
+                Зниження ризиків для бійців на передовій
               </p>
             </div>
           </li>
@@ -61,8 +61,8 @@ const Importance = () => {
 
             <div className={styles.importance__info}>
               <p className={styles.importance__info_text}>
-                {' '}
-                Максимізація ефективності у знищенні ворога.
+                {" "}
+                Максимізація ефективності у знищенні ворога
               </p>
             </div>
           </li>
@@ -88,7 +88,7 @@ const Importance = () => {
                 className={`${styles.importance__info_text} ${styles.bigText}`}
               >
                 Підтримка українських розробників та інженерів у розвитку
-                безпілотної авіації.
+                безпілотної авіації
               </p>
             </div>
           </li>
@@ -114,13 +114,13 @@ const Importance = () => {
                 className={`${styles.importance__info_text} ${styles.bigText} ${styles.bigText_last}`}
               >
                 Забезпечення ЗСУ передовими та надійними БпЛА для бойових
-                операцій.
+                операцій
               </p>
             </div>
           </li>
         </ul>
         <p className={styles.importance__text}>
-          Підтримаємо український продукт, який надає не просто крила, а{' '}
+          Підтримаємо український продукт, який надає не просто крила, а{" "}
           <span className={styles.text_color}>українські крила</span> нашим
           військовим!
         </p>
