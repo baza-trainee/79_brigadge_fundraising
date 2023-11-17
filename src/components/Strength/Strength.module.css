@@ -70,6 +70,11 @@
   .strength-img {
     height: 129px;
   }
+
+  .strength-share-btn {
+    padding: 9px 41.56px 8px 42px;
+    font-size: 28px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -103,6 +108,11 @@
     padding-bottom: 0px;
   }
 
+  .strength-title {
+    font-size: 36px;
+    line-height: 1;
+  }
+
   .strength-text {
     font-size: 25px;
     line-height: 1;
@@ -120,11 +130,6 @@
   .strength-share-btn {
     padding: 15px 40px;
     font-size: 30px;
-  }
-
-  .strength-title {
-    font-size: 32px;
-    line-height: 1;
   }
 }
 
