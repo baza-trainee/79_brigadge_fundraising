@@ -18,8 +18,9 @@ const UkrainianWings = () => {
           <p className={styles["ukrainian-wings-desc"]}>
             Наша мета зібрати{" "}
             <span className={styles["big_screen"]}>50 000 гривень</span>
-            <span className={styles["small_screen"]}>50 000 грн</span> для 79
-            бригади ЗСУ на фінансування проєкту <span>Бекфаєр</span>
+            <span className={styles["small_screen"]}>50 000 грн</span> для
+            Зведеного загону ВМС та Сухопутних військ “Злі Птахи” на
+            фінансування проєкту <span>Бекфаєр</span>
           </p>
           <a
             className={styles["ukrainian-wings-btn"]}
@@ -27,7 +28,7 @@ const UkrainianWings = () => {
             rel="noreferrer"
             target="_blank"
           >
-            На крила
+            Донат на крила
           </a>
         </div>
         <div

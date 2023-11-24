@@ -8,7 +8,7 @@ import Logo from "../../../assets/img/header/logo.png";
 import styles from "./Header.module.css";
 
 const navLinks = [
-  { text: "Про бригаду", sectionId: "1" }, // change numbers to element id
+  { text: "Про підрозділ", sectionId: "1" }, // change numbers to element id
   { text: "Чому важливо?", sectionId: "2" },
   { text: "Бекфаєр К1", sectionId: "3" },
 ];
