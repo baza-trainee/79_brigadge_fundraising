@@ -116,6 +116,10 @@
   .wings-content-wrapper {
     margin: 80px 0;
   }
+
+  .wings-block1-text {
+    font-size: 38px;
+  }
 }
 
 @media (max-width: 768px) {

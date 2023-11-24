@@ -116,6 +116,11 @@
     padding-bottom: 0px;
   }
 
+  .strength-title {
+    font-size: 36px;
+    line-height: 1;
+  }
+
   .strength-text {
     font-size: 25px;
     line-height: 28px;
