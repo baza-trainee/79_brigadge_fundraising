@@ -114,9 +114,21 @@
   z-index: 101px;
 }
 
+@media (min-width: 320px) {
+  .logo_wrapper {
+    width: 120px;
+    height: 32px;
+  }
+}
+
 @media (min-width: 420px) {
   .nav_wrapper {
     width: 280px;
+  }
+
+  .logo_wrapper {
+    width: 120px;
+    height: 32px;
   }
 }
 
@@ -131,7 +143,7 @@
 
   .logo_wrapper {
     height: 40px;
-    width: 80px;
+    width: 150px;
   }
 
   .nav_wrapper {
@@ -145,6 +157,11 @@
   .nav_list {
     flex-direction: row;
     gap: 10px;
+    white-space: nowrap;
+  }
+
+  .nav_item {
+    padding: 10px 0;
   }
 
   .nav_href {
@@ -186,7 +203,7 @@
 
   .logo_wrapper {
     height: 40px;
-    width: 80px;
+    width: 150px;
   }
 }
 
@@ -207,14 +224,14 @@
 
   .logo_wrapper {
     height: 60px;
-    width: 120px;
+    width: 224px;
   }
 }
 
 @media (min-width: 1680px) {
   .logo_wrapper {
     height: 60px;
-    width: 120px;
+    width: 224px;
   }
 
   .nav_list {

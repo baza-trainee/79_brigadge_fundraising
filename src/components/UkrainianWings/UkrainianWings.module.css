@@ -306,6 +306,10 @@
   .ukrainian-wings-subtitle {
     width: 110%;
   }
+
+  .ukrainian-wings-btn {
+    white-space: nowrap;
+  }
 }
 
 @media (min-width: 1200px) {
