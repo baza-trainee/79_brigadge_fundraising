@@ -25,7 +25,7 @@ const Modal = ({ active, setActive }) => {
           <p className={styles["modal-title"]}>Поділитись</p>
           <div className={styles["modal-btn-wrapper"]}>
             <a
-              href="https://www.facebook.com/sharer.php?u=http%3A%2F%2F79-wings.site%2F"
+              href="https://www.facebook.com/sharer.php?u=http%3A%2F%2Fangry-wings.space%2F"
               target="_blank"
               rel="noreferrer"
               className={`${styles["modal-btn"]} ${styles["facebook"]}`}
@@ -34,7 +34,7 @@ const Modal = ({ active, setActive }) => {
               Facebook
             </a>
             <a
-              href="https://telegram.me/share/url?url=79-wings.site&text=Окриляй%20злих%20птахів,%20знищуй%20ворогів.%20"
+              href="https://telegram.me/share/url?url=angry-wings.space&text=Окриляй%20злих%20птахів,%20знищуй%20ворогів.%20"
               target="_blank"
               rel="noreferrer"
               className={`${styles["modal-btn"]} ${styles["telegram"]}`}
@@ -43,7 +43,7 @@ const Modal = ({ active, setActive }) => {
               Telegram
             </a>
             <a
-              href="viber://forward?text=Окриляй%20злих%20птахів,%20знищуй%20ворогів.%2079-wings.site"
+              href="viber://forward?text=Окриляй%20злих%20птахів,%20знищуй%20ворогів.%20angry-wings.space"
               rel="noreferrer"
               className={`${styles["modal-btn"]} ${styles["viber"]}`}
             >
@@ -51,7 +51,7 @@ const Modal = ({ active, setActive }) => {
               Viber
             </a>
             <a
-              href="https://www.linkedin.com/sharing/share-offsite/?url=http://79-wings.site/"
+              href="https://www.linkedin.com/sharing/share-offsite/?url=angry-wings.space"
               target="_blank"
               rel="noreferrer"
               className={`${styles["modal-btn"]} ${styles["linkedin"]}`}
