@@ -60,6 +60,23 @@
   background-color: var(--button-light-pressing);
 }
 
+@media (max-width: 1024px) {
+  .strength-text,
+  .strength-text-span {
+    font-size: 28px;
+    line-height: 35.6px;
+  }
+
+  .strength-img {
+    height: 129px;
+  }
+
+  .strength-share-btn {
+    padding: 9px 41.56px 8px 42px;
+    font-size: 28px;
+  }
+}
+
 @media (max-width: 992px) {
   .strength {
     padding-top: 80px;
@@ -91,6 +108,11 @@
     padding-bottom: 0px;
   }
 
+  .strength-title {
+    font-size: 36px;
+    line-height: 1;
+  }
+
   .strength-text {
     font-size: 25px;
     line-height: 1;
@@ -108,11 +130,6 @@
   .strength-share-btn {
     padding: 15px 40px;
     font-size: 30px;
-  }
-
-  .strength-title {
-    font-size: 32px;
-    line-height: 1;
   }
 }
 
