@@ -1,0 +1,283 @@
+.modal {
+  height: 100%;
+  width: 100vw;
+  /* max-height: 100%; */
+  min-height: 100vh;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  transform: scale(0);
+  z-index: 9999;
+}
+
+.modal.active {
+  transform: scale(1);
+}
+
+.modal-content {
+  position: relative;
+  margin: 0 auto;
+  top: 0;
+  height: 660px;
+  width: 800px;
+  background-color: var(--black);
+  border: 1px solid rgba(0, 0, 0, 0);
+  z-index: 1;
+}
+
+.modal-title {
+  color: var(--white);
+  font-family: var(--bold-font-family);
+  font-size: 36px;
+  line-height: 43.2px;
+  font-weight: 400;
+  margin-top: 80px;
+  margin-bottom: 70px;
+}
+
+.modal-btn-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  z-index: 30;
+}
+
+.modal-btn {
+  color: var(--white);
+  font-family: var(--bold-font-family);
+  font-size: 36px;
+  line-height: 43.2px;
+  font-weight: 400;
+  width: 400px;
+  height: 80px;
+  outline: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 32px;
+  z-index: 40;
+}
+
+.modal-btn.facebook {
+  background-color: #337fff;
+}
+
+.modal-btn.telegram {
+  background-color: #34aadf;
+}
+
+.modal-btn.viber {
+  background-color: #754a91;
+}
+
+.modal-btn.linkedin {
+  background-color: #006699;
+}
+
+.icon {
+  width: 60px;
+  height: 60px;
+  margin-left: 60px;
+}
+
+.modal-btn-close {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  background-image: url("../../assets/img/modal/x-square.svg");
+  background-color: transparent;
+  width: 40px;
+  height: 40px;
+  outline: none;
+  border: none;
+}
+
+.fon-2 {
+  position: absolute;
+  left: -1px;
+  top: -1px;
+
+  pointer-events: none;
+  z-index: -5;
+}
+
+.fon-3 {
+  position: absolute;
+  right: -1px;
+  bottom: -1px;
+  pointer-events: none;
+  z-index: 10;
+}
+
+@media screen and (max-width: 1024px) {
+  .modal-content {
+    width: 560px;
+    height: 553px;
+  }
+
+  .modal-title {
+    margin: 84px 0 50px 0;
+  }
+
+  .modal-title,
+  .modal-btn {
+    font-size: 32px;
+  }
+
+  .modal-btn {
+    gap: 26px;
+    width: 330px;
+    height: 60px;
+  }
+
+  .icon {
+    height: 50px;
+    margin-left: 50px;
+    width: 50px;
+  }
+
+  .fon-2 {
+    top: 20px;
+    height: 530px;
+    width: 343px;
+    left: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .modal-content {
+    width: 480px;
+    height: 553px;
+  }
+
+  .modal-title {
+    font-size: 28px;
+    margin: 84px 0 55px 0;
+  }
+
+  .modal-btn {
+    font-size: 28px;
+  }
+
+  .modal-btn {
+    gap: 25px;
+    width: 300px;
+    height: 60px;
+  }
+
+  .icon {
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+  }
+
+  .fon-2 {
+    top: 40px;
+    height: 553px;
+    width: 243px;
+    left: auto;
+  }
+
+  .fon-3 {
+    height: 99px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .modal-content {
+    width: 380px;
+    height: 503px;
+  }
+
+  .modal-title {
+    font-size: 28px;
+    margin: 64px 0 45px 0;
+  }
+
+  .modal-btn {
+    font-size: 24px;
+  }
+
+  .modal-btn {
+    gap: 24px;
+    width: 260px;
+    height: 60px;
+  }
+
+  .icon {
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+  }
+
+  .modal-btn-close {
+    width: 20px;
+    height: 20px;
+    background-position: center center;
+    background-size: 20px 20px;
+  }
+
+  .fon-2 {
+    top: 40px;
+    height: 517px;
+    width: 250px;
+    left: -1px;
+  }
+
+  .fon-3 {
+    height: 99px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 375px) {
+  .modal-content {
+    width: 280px;
+    height: 433px;
+  }
+
+  .modal-title {
+    font-size: 28px;
+    margin: 54px 0 35px 0;
+  }
+
+  .modal-btn {
+    font-size: 24px;
+  }
+
+  .modal-btn {
+    gap: 15px;
+    width: 240px;
+    height: 50px;
+  }
+
+  .icon {
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+  }
+
+  .modal-btn-close {
+    width: 20px;
+    height: 20px;
+    background-position: center center;
+    background-size: 20px 20px;
+  }
+
+  .fon-2 {
+    top: 40px;
+    height: 470px;
+    width: 199px;
+    left: -1px;
+  }
+
+  .fon-3 {
+    height: 39px;
+  }
+}

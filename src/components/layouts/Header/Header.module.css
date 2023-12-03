@@ -1,0 +1,249 @@
+.header {
+  position: sticky;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+  background-color: var(--black);
+}
+
+.header_wrapper {
+  margin: 0 auto;
+  padding: 20px 0;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  background-color: inherit;
+}
+
+.logo_wrapper {
+  height: 32px;
+  width: 64px;
+}
+
+.logo_img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.nav_wrapper {
+  position: fixed;
+  height: fit-content;
+  background-color: var(--black);
+  z-index: -2;
+  right: 0;
+  top: 72px;
+  padding: 20px 0px;
+  width: 100%;
+  right: -100%;
+  transition: right 0.5s;
+}
+
+.nav_list {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  gap: 10px;
+}
+
+.nav_item {
+  padding: 10px 10px;
+  list-style: none;
+}
+
+.nav_href {
+  color: var(--white);
+  font-family: "Russo One";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  cursor: pointer;
+  transition: text-shadow 3s;
+}
+
+.active {
+  right: 0px;
+}
+
+.burger_menu_blur {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.18);
+  width: 100%;
+  height: 100vh;
+  left: 0;
+  z-index: -3;
+  transition: all 2s;
+  display: none;
+}
+
+.burger_menu_blur.active {
+  display: block;
+}
+
+.button_donat {
+  display: none;
+  color: var(--main-green);
+  background-color: var(--button-header-default);
+  font-family: "Russo One";
+  padding: 10px 20px;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 120%;
+  font-weight: 400;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.button_donat:hover {
+  color: var(--black);
+  background-color: var(--button-header-hover);
+}
+
+.button_donat:active {
+  color: var(--black);
+  background-color: var(--button-header-pressing);
+}
+
+.burger_menu_icon {
+  width: 32px;
+  height: 32px;
+  background-image: url("../../../assets/img/header/burger_menu_icon.svg");
+  cursor: pointer;
+  z-index: 101px;
+}
+
+@media (min-width: 320px) {
+  .logo_wrapper {
+    width: 120px;
+    height: 32px;
+  }
+}
+
+@media (min-width: 420px) {
+  .nav_wrapper {
+    width: 280px;
+  }
+
+  .logo_wrapper {
+    width: 120px;
+    height: 32px;
+  }
+}
+
+@media (min-width: 768px) {
+  .header {
+    background-color: var(--dark-green);
+  }
+
+  .header_wrapper {
+    padding: 10px 0;
+  }
+
+  .logo_wrapper {
+    height: 40px;
+    width: 150px;
+  }
+
+  .nav_wrapper {
+    background-color: inherit;
+    position: static;
+    z-index: inherit;
+    padding: 0;
+    width: auto;
+  }
+
+  .nav_list {
+    flex-direction: row;
+    gap: 10px;
+    white-space: nowrap;
+  }
+
+  .nav_item {
+    padding: 10px 0;
+  }
+
+  .nav_href {
+    font-size: 16px;
+  }
+
+  .nav_href:hover {
+    text-decoration: underline;
+  }
+
+  .nav_href:active {
+    color: var(--black);
+    text-decoration: none;
+  }
+
+  .button_donat {
+    display: block;
+  }
+
+  .burger_menu_icon {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .button_donat {
+    padding: 10px 40px;
+    font-size: 20px;
+    line-height: 100%;
+  }
+
+  .nav_list {
+    gap: 30px;
+  }
+
+  .nav_href {
+    font-size: 20px;
+  }
+
+  .logo_wrapper {
+    height: 40px;
+    width: 150px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .button_donat {
+    padding: 10px 40px;
+    font-size: 20px;
+    line-height: 100%;
+  }
+
+  .nav_list {
+    gap: 30px;
+  }
+
+  .nav_href {
+    font-size: 20px;
+  }
+
+  .logo_wrapper {
+    height: 60px;
+    width: 224px;
+  }
+}
+
+@media (min-width: 1680px) {
+  .logo_wrapper {
+    height: 60px;
+    width: 224px;
+  }
+
+  .nav_list {
+    gap: 50px;
+  }
+
+  .nav_href {
+    font-size: 24px;
+  }
+
+  .button_donat {
+    font-size: 24px;
+    line-height: 120%;
+  }
+}

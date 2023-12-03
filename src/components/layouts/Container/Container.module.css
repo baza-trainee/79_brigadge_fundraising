@@ -1,0 +1,41 @@
+.container {
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 319px) {
+    .container {
+        padding: 0 10px;
+    }
+}
+
+@media screen and (min-width: 320px) {
+    .container {
+        padding: 0 20px;
+    }
+}
+
+@media screen and (min-width: 420px) {
+    .container {
+        padding: 0 20px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        padding: 0 54px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        padding: 0 62px;
+    }
+}
+
+@media screen and (min-width: 1680px) {
+    .container {
+        padding: 0 200px;
+        box-sizing: content-box;
+        max-width: 1280px;
+    }
+}
