@@ -74,7 +74,7 @@ const Header = ({ links = navLinks }) => {
           </nav>
           <a
             className={styles.button_donat}
-            href="https://send.monobank.ua/jar/4jhbEszhq6"
+            href="https://send.monobank.ua/jar/5wMdvn59S"
             rel="noreferrer"
             target="_blank"
           >

@@ -24,7 +24,7 @@ const UkrainianWings = () => {
           </p>
           <a
             className={styles["ukrainian-wings-btn"]}
-            href="https://send.monobank.ua/jar/4jhbEszhq6"
+            href="https://send.monobank.ua/jar/5wMdvn59S"
             rel="noreferrer"
             target="_blank"
           >
