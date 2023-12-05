@@ -4,57 +4,15 @@ import styles from "./ProgressBar.module.css";
 import boat from "../../assets/img/progress-bar/boat.svg";
 
 import React, { useEffect, useState } from "react";
-
-const jarInfo = {
-  fundraisingGoal: 250000,
-  totalDonations: 100,
-  recentDonations: [
-    {
-      donor: "53************89",
-      donationAmount: 150.0,
-    },
-    {
-      donor: "Donor3",
-      donationAmount: 600.0,
-    },
-    {
-      donor: "Donor4",
-      donationAmount: 500.0,
-    },
-    {
-      donor: "Donor5",
-      donationAmount: 400.0,
-    },
-  ],
-  largestDonations: [
-    {
-      donor: "Donor1",
-      donationAmount: 1000.0,
-    },
-    {
-      donor: "Donor2",
-      donationAmount: 750.0,
-    },
-    {
-      donor: "Donor3",
-      donationAmount: 600.0,
-    },
-    {
-      donor: "Donor4",
-      donationAmount: 500.0,
-    },
-    {
-      donor: "Donor5",
-      donationAmount: 400.0,
-    },
-  ],
-};
+import useGetJarDetails from "../../api/useGetJarDetails";
 
 const ProgressBar = ({ openModal }) => {
   const [lengthScale, setLengthScale] = useState(0);
+  const { data } = useGetJarDetails();
+  const { fundraisingGoal, totalDonations } = data;
 
-  const totalAmount = jarInfo.fundraisingGoal;
-  const completedAmount = jarInfo.totalDonations;
+  const totalAmount = fundraisingGoal;
+  const completedAmount = totalDonations;
   const completionPercentage = Math.floor(
     (completedAmount / totalAmount) * 100
   );

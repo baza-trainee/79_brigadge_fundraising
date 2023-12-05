@@ -17,8 +17,8 @@ const UkrainianWings = () => {
           </h5>
           <p className={styles["ukrainian-wings-desc"]}>
             Наша мета зібрати{" "}
-            <span className={styles["big_screen"]}>50 000 гривень</span>
-            <span className={styles["small_screen"]}>50 000 грн</span> для
+            <span className={styles["big_screen"]}>250 000 гривень</span>
+            <span className={styles["small_screen"]}>250 000 грн</span> для
             Зведеного загону ВМС та Сухопутних військ “Злі Птахи” на
             фінансування проєкту <span>Бекфаєр</span>
           </p>
